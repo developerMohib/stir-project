@@ -14,6 +14,7 @@ import { LuArrowUpRight } from "react-icons/lu";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../assets/css/style.css";
 import "../../assets/css/responsive.css";
+import LearnMore from "../LearnMore/LearnMore";
 
 
 const WorkBrand = () => {
@@ -128,8 +129,10 @@ const WorkBrand = () => {
                    className="circle-btn text-decoration-none d-flex align-items-center justify-content-center"
                   >
                     <span>Learn More</span>
+                    <i className="fa-solid fa-angle-up"></i>
                     <LuArrowUpRight className="text-white" />
                   </a>
+                  <LearnMore />
                 </div>
               </div>
             </div>

@@ -1340,26 +1340,32 @@ textarea.form-control {
   right: 0;
   margin: auto;
   color: #ffffff;
+  background-color: transparent;
 }
-.scroll-btn i {
-  animation: moveLeftBounces 3s linear infinite;
+
+.scroll-btn .icon {
+  display: inline-block; /* Ensure the icon is an inline-block element */
+  animation: moveUpDown 3s linear infinite;
 }
+
 .scroll-btn:hover {
   background-color: #FD6219;
   color: #ffffff;
 }
 
-@keyframes moveLeftBounces {
+@keyframes moveUpDown {
   0% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(20px);
+    transform: translateY(20px); /* Adjust the value to control the distance */
   }
   100% {
     transform: translateY(0);
   }
 }
+
+
 .shape {
   position: absolute;
 }

@@ -4,7 +4,6 @@ import serviceIcon3 from "../../assets/images/services-icon-3.svg"
 import serviceIcon4 from "../../assets/images/services-icon-4.svg"
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faArrowUpRight } from '@fortawesome/free-solid-svg-icons';
-import { GoArrowUpRight } from "react-icons/go";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../assets/css/style.css";

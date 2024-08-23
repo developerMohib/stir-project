@@ -6,7 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faArrowDownLong } from '@fortawesome/free-solid-svg-icons';
 
 import { LuArrowUpRight } from "react-icons/lu";
-import "../../assets/css/style.css"
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../../assets/css/style.css";
+import "../../assets/css/responsive.css";
 
 
 const HeroBanner = () => {
@@ -58,7 +60,7 @@ const HeroBanner = () => {
               </p>
             </div>
             <a href="#about-us" className="scroll-btn">
-            <FontAwesomeIcon icon={faArrowDownLong} />
+            <FontAwesomeIcon className="icon" icon={faArrowDownLong} />
             </a>
           </div>
         </div>

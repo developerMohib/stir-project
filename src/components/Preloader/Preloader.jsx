@@ -4,7 +4,6 @@ const Preloader = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate a delay to represent loading time (e.g., 3 seconds)
     setTimeout(() => {
       setLoading(false);
     }, 3000);
