@@ -2,9 +2,21 @@ import whoWeare from "../../assets/images/who-we-are-img.png"
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../assets/css/style.css";
 import "../../assets/css/responsive.css";
+import { useEffect } from "react";
 
 
 const WhoWe = () => {
+  useEffect(() => {
+    const bars = document.querySelectorAll('.skill-bar');
+    bars.forEach((bar) => {
+      const percentage = bar.getAttribute('data-percentage');
+      const progressContent = bar.querySelector('.progress-content');
+      setTimeout(() => {
+        progressContent.style.width = percentage;
+      }, 500);
+    });
+  }, []);
+
   return (
     <div>
       {/*=== Start Who We Are Area ===*/}

@@ -1,3 +1,4 @@
+import BeckToTop from "../../components/BeckToTop/BeckToTop";
 import CaseStudy from "../../components/CaseStudy/CaseStudy";
 import Contact from "../../components/Contact/Contact";
 import Faq from "../../components/Faq/Faq";
@@ -18,6 +19,7 @@ const Home = () => {
             <CaseStudy />
             <Faq />
             <Contact />
+            <BeckToTop />
         </div>
     );
 };
