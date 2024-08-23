@@ -11,6 +11,10 @@ import brand10 from "../../assets/images/brands-10.png";
 import aboutUs from "../../assets/images/about-us.png"
 import { Link } from "react-router-dom";
 import { LuArrowUpRight } from "react-icons/lu";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../../assets/css/style.css";
+import "../../assets/css/responsive.css";
+
 
 const WorkBrand = () => {
   return (
@@ -124,18 +128,9 @@ const WorkBrand = () => {
                    className="circle-btn text-decoration-none d-flex align-items-center justify-content-center"
                   >
                     <span>Learn More</span>
-                    <LuArrowUpRight />
+                    <LuArrowUpRight className="text-white" />
                   </a>
                 </div>
-                <div className="text-center services-btn d-inline-block m-auto mt-lg-4">
-                <a
-                  href="services.html"
-                  className="circle-btn text-decoration-none d-flex align-items-center justify-content-center"
-                >
-                  <span>Learn More</span>
-                  <LuArrowUpRight />
-                </a>
-              </div>
               </div>
             </div>
           </div>

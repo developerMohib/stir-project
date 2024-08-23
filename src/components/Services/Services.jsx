@@ -2,6 +2,9 @@ import serviceIcon1 from "../../assets/images/services-icon-1.svg"
 import serviceIcon2 from "../../assets/images/services-icon-2.svg"
 import serviceIcon3 from "../../assets/images/services-icon-3.svg"
 import serviceIcon4 from "../../assets/images/services-icon-4.svg"
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../../assets/css/style.css";
+import "../../assets/css/responsive.css";
 
 const Services = () => {
   return (
