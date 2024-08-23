@@ -30,18 +30,18 @@ const Navbar = () => {
                   <Link className="nav-link dropdown-toggle "> Home </Link>
                   <ul className="dropdown-menu">
                     <li className="nav-item">
-                      <Link to="index.html" className="nav-link">
+                      <Link to="/home-1" className="nav-link">
                         Creative Agency
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to="index-2.html" className="nav-link">
+                      <Link to="/home-2" className="nav-link">
                         {" "}
                         Business Agency
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to="index-3.html" className="nav-link">
+                      <Link to="/home-3" className="nav-link">
                         Digital Agency
                       </Link>
                     </li>
@@ -189,7 +189,7 @@ const Navbar = () => {
                     className="form-select"
                     aria-label="Default select example"
                   >
-                    <option selected>Language</option>
+                    <option defaultValue >Language</option>
                     <option value={1}>English</option>
                     <option value={2}>Arabic</option>
                     <option value={3}>China</option>

@@ -1,8 +1,13 @@
+import HeroBanner from "../../components/HeroBanner/HeroBanner";
+import Services from "../../components/Services/Services";
+import WorkBrand from "../../components/WorkBrand/WorkBrand";
 
 const Home = () => {
     return (
         <div>
-            <h1>Home</h1>
+            <HeroBanner/>
+            <WorkBrand/>
+            <Services />
         </div>
     );
 };
