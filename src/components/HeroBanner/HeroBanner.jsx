@@ -3,7 +3,8 @@ import vdoImg from "../../assets/images/video-img.jpg"
 import shape1 from "../../assets/images/shape-1.png"
 import shape5 from "../../assets/images/shape-5.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlay } from '@fortawesome/free-solid-svg-icons';
+import { faPlay, faArrowDownLong } from '@fortawesome/free-solid-svg-icons';
+
 import { LuArrowUpRight } from "react-icons/lu";
 import "../../assets/css/style.css"
 
@@ -57,7 +58,7 @@ const HeroBanner = () => {
               </p>
             </div>
             <a href="#about-us" className="scroll-btn">
-              <i className="fa-sharp fa-light fa-arrow-down" />
+            <FontAwesomeIcon icon={faArrowDownLong} />
             </a>
           </div>
         </div>
