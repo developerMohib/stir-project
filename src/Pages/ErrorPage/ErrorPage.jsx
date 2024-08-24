@@ -1,8 +1,11 @@
+import Error404 from "./Error404/Error404";
+import ErrorBanner from "./ErrorBanner/ErrorBanner";
 
 const ErrorPage = () => {
     return (
         <div>
-            <h1>error page</h1>
+            <ErrorBanner/>
+            <Error404 />
         </div>
     );
 };

@@ -30,7 +30,7 @@ const Navbar = () => {
                   <Link className="nav-link dropdown-toggle "> Home </Link>
                   <ul className="dropdown-menu">
                     <li className="nav-item">
-                      <Link to="/home-1" className="nav-link">
+                      <Link to="/" className="nav-link">
                         Creative Agency
                       </Link>
                     </li>

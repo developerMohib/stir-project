@@ -1,0 +1,43 @@
+[
+    {
+      "iconImg": "../src/assets/images/services-icon-1.svg",
+      "serviceName": "Strategy Consulting",
+      "title": "Expert guidance in formulating and growth plans.",
+      "features": [
+        "Product Managemen",
+        "Financial Advisory",
+        "Product Strategy"
+      ]
+    },
+    {
+      "iconImg": "../src/assets/images/services-icon-2.svg",
+      "serviceName": "Digital Marketing",
+      "title": "Creating Intuitive Mobile Applications",
+      "features": [
+        "iOS and Android Support",
+        "User-Friendly Interface",
+        "Offline Functionality"
+      ]
+    },
+    {
+      "iconImg": "../src/assets/images/services-icon-3.svg",
+      "serviceName": "Web Development",
+      "title": "Boosting Your Online Presence",
+      "features": [
+        "Social Media Management",
+        "Email Campaigns",
+        "Content Marketing"
+      ]
+    },
+    {
+      "iconImg": "../src/assets/images/services-icon-4.svg",
+      "serviceName": "Creative Design",
+      "title": "Crafting Engaging User Experiences",
+      "features": [
+        "User Research",
+        "Wireframing and Prototyping",
+        "Visual Design"
+      ]
+    }
+  ]
+  

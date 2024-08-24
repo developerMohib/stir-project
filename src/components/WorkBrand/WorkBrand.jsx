@@ -14,7 +14,6 @@ import { LuArrowUpRight } from "react-icons/lu";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../assets/css/style.css";
 import "../../assets/css/responsive.css";
-import LearnMore from "../LearnMore/LearnMore";
 
 
 const WorkBrand = () => {
@@ -132,7 +131,6 @@ const WorkBrand = () => {
                     <i className="fa-solid fa-angle-up"></i>
                     <LuArrowUpRight className="text-white" />
                   </a>
-                  <LearnMore />
                 </div>
               </div>
             </div>
