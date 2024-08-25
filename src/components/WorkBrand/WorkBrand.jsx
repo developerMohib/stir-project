@@ -123,7 +123,6 @@ const WorkBrand = () => {
                    className="circle-btn text-decoration-none d-flex align-items-center justify-content-center"
                   >
                     <span>Learn More</span>
-                    <i className="fa-solid fa-angle-up"></i>
                     <i className="fa-solid fa-arrow-up-right"></i>
                   </a>
                 </div>

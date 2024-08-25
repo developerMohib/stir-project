@@ -9,6 +9,10 @@ import Blog from "../Pages/Blog/Blog";
 import Cart from "../Pages/Cart/Cart";
 import Checkout from "../Pages/Checkout/Checkout";
 import CaseStudy from "../Pages/CaseStudy/CaseStudy";
+import CaseDetails from "../Pages/CaseDetails/CaseDetails";
+import ContactUs from "../Pages/ContactUs/ContactUs";
+import FaqPage from "../Pages/FaqPage/FaqPage";
+import PrivacyPolicy from "../Pages/PrivacyPolicy/PrivacyPolicy";
 
 export const router = createBrowserRouter([
   {
@@ -34,7 +38,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/blog",
-        element: <Blog /> ,
+        element: <Blog />,
       },
       {
         path: "/cart",
@@ -42,11 +46,27 @@ export const router = createBrowserRouter([
       },
       {
         path: "/check-out",
-        element: <Checkout /> ,
+        element: <Checkout />,
       },
       {
         path: "/case-study",
-        element: <CaseStudy /> ,
+        element: <CaseStudy />,
+      },
+      {
+        path: "/case-study-details",
+        element: <CaseDetails />,
+      },
+      {
+        path: "/contact",
+        element: <ContactUs />,
+      },
+      {
+        path: "/faq",
+        element: <FaqPage />,
+      },
+      {
+        path: "/privacy-policy",
+        element: <PrivacyPolicy />,
       },
     ],
   },
