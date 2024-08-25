@@ -1,0 +1,26 @@
+[
+    {
+        "about" : "Whether it's enhancing market visibility, improving operational efficiency, or implementing cutting-edge technologies, our agency offers a wide spectrum of services. From strategic consulting & digital transformation to marketing strategies & financial advisory...",
+        "personImg" : "../src/assets/images/testimonial-3.png",
+        "name" : "Brandi Rowe",
+        "proffession" : "Marketing Lead at Technlogia"
+    },
+    {
+        "about" : "Whether it's enhancing market visibility, improving operational efficiency, or implementing cutting-edge technologies, our agency offers a wide spectrum of services. From strategic consulting & digital transformation to marketing strategies & financial advisory...",
+        "personImg" : "../src/assets/images/testimonial-7.jpg",
+        "name" : "Alex Dew",
+        "proffession" : "Founder Of Technlogia"
+    },
+    {
+        "about" : "Whether it's enhancing market visibility, improving operational efficiency, or implementing cutting-edge technologies, our agency offers a wide spectrum of services. From strategic consulting & digital transformation to marketing strategies & financial advisory...",
+        "personImg" : "../src/assets/images/testimonial-8.jpg",
+        "name" : "Alex Dew",
+        "proffession" : "CEO Of GR"
+    },
+    {
+        "about" : "Whether it's enhancing market visibility, improving operational efficiency, or implementing cutting-edge technologies, our agency offers a wide spectrum of services. From strategic consulting & digital transformation to marketing strategies & financial advisory...",
+        "personImg" : "../src/assets/images/testimonial-9.jpg",
+        "name" : "Prew Smith",
+        "proffession" : "Marketing Lead"
+    }
+]

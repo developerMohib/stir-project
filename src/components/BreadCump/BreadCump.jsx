@@ -1,18 +1,17 @@
-
 import { Link } from "react-router-dom";
 
-const BreadCump = ({bgImg,pageName}) => {
+const BreadCump = ({ bgImg, pageName }) => {
   return (
     <div
       className="page-banner-area bg-black bg-img"
-        style={{ backgroundImage: `url(${bgImg})` }}
+      style={{ backgroundImage: `url(${bgImg})` }}
     >
       <div className="container mw-1680">
         <div className="page-banner-content">
           <h2>{pageName}</h2>
           <ul className="ps-0 mb-0 list-unstyled justify-content-center page-breadcrumb d-flex flex-wrap gap-4">
             <li>
-                <Link to="/" > Home </Link>
+              <Link to="/"> Home </Link>
             </li>
             <li>
               <span className="active"> {pageName} </span>

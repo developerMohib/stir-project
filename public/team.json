@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Diana Wilson",
+        "proffession" : "UI/UX Designer",
+        "image" : "../src/assets/images/team-1.jpg"
+    },
+    {
+        "name": "Sheila Barrier",
+        "proffession" : "Web Developer",
+        "image" : "../src/assets/images/team-2.jpg"
+    },
+    {
+        "name": "Glenda Pellerin",
+        "proffession" : "Product Designer",
+        "image" : "../src/assets/images/team-3.jpg"
+    },
+    {
+        "name": "Jessica Parrott",
+        "proffession" : "Senior Consultant",
+        "image" : "../src/assets/images/team-4.jpg"
+    },
+    {
+        "name": "Juhom Smith",
+        "proffession" : "React Developer",
+        "image" : "../src/assets/images/team-5.jpg"
+    },
+    {
+        "name": "Kilva Dew",
+        "proffession" : "Angular Developer",
+        "image" : "../src/assets/images/team-6.jpg"
+    },
+    {
+        "name": "Anne Smith",
+        "proffession" : "Vue Developer",
+        "image" : "../src/assets/images/team-7.jpg"
+    },
+    {
+        "name": "Staven Dew",
+        "proffession" : "Software Developer",
+        "image" : "../src/assets/images/team-8.jpg"
+    }
+]

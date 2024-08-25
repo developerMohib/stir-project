@@ -17,6 +17,12 @@ import ProductDetails from "../Pages/ProductDetails/ProductDetails";
 import Product from "../Pages/Product/Product";
 import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
 import Services from "../Pages/Services/Services";
+import SignIn from "../Pages/SignIn/SignIn";
+import SignUp from "../Pages/SignUp/SignUp";
+import SingleBlog from "../Pages/SingleBlog/SingleBlog";
+import Team from "../Pages/Team/Team";
+import TermCondition from "../Pages/TermCondition/TermCondition";
+import TestominalPage from "../Pages/TestominalPage/TestominalPage";
 
 export const router = createBrowserRouter([
   {
@@ -69,6 +75,10 @@ export const router = createBrowserRouter([
         element: <FaqPage />,
       },
       {
+        path: "/team",
+        element: <Team />,
+      },
+      {
         path: "/privacy-policy",
         element: <PrivacyPolicy />,
       },
@@ -87,6 +97,26 @@ export const router = createBrowserRouter([
       {
         path: "/services",
         element: <Services />,
+      },
+      {
+        path: "/sign-in",
+        element: <SignIn />,
+      },
+      {
+        path: "/sign-up",
+        element: <SignUp />,
+      },
+      {
+        path: "/single-blog",
+        element: <SingleBlog />,
+      },
+      {
+        path: "/terms-conditions",
+        element: <TermCondition />,
+      },
+      {
+        path: "/testimonials",
+        element: <TestominalPage />,
       },
     ],
   },
