@@ -1,33 +1,10 @@
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import BreadCump from "../../components/BreadCump/BreadCump";
-// import useDataFetch from "../../components/Hooks/useDataFetch";
 import shapeBg from "../../assets/images/banner-bg-shape.png";
+import useDataFetch from "../../components/Hooks/useDataFetch";
 
 const Cart = () => {
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
-  // fetching data
-  useEffect(() => {
-    fetchData();
-  }, []);
-  const fetchData = async () => {
-    try {
-      const response = await fetch("/cart.json"); // Replace with your API endpoint
-      if (!response.ok) {
-        throw new Error("Network response was not ok.");
-      }
-      const data = await response.json();
-      setData(data);
-      setLoading(false);
-    } catch (error) {
-      console.log(error);
-      setLoading(false);
-    }
-  };
-  if (loading) {
-    return <div>Loading...</div>;
-  }
+    const { data } = useDataFetch({ url: "/cart.json"});
   return (
     <>
       <BreadCump bgImg={shapeBg} pageName={"Cart"} />

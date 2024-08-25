@@ -2,33 +2,10 @@ import BreadCump from "../../components/BreadCump/BreadCump";
 import Contact from "../../components/Contact/Contact";
 import Testominal from "../../components/Testominal/Testominal";
 import shapeBg from "../../assets/images/banner-bg-shape.png";
-import { useEffect, useState } from "react";
+import useDataFetch from "../../components/Hooks/useDataFetch";
 
 const Blog = () => {
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
-  // fetching data
-  useEffect(() => {
-    fetchData();
-  }, []);
-  const fetchData = async () => {
-    try {
-      const response = await fetch("/blog.json"); // Replace with your API endpoint
-      if (!response.ok) {
-        throw new Error("Network response was not ok.");
-      }
-      const data = await response.json();
-      setData(data);
-      setLoading(false);
-    } catch (error) {
-      console.log(error);
-      setLoading(false);
-    }
-  };
-  if (loading) {
-    return <div>Loading...</div>;
-  }
-
+  const { data } = useDataFetch({ url: "/blog.json" });
   return (
     <div>
       <BreadCump bgImg={shapeBg} pageName={"Blog"} />
