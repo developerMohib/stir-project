@@ -34,5 +34,41 @@
       "Sustainability Consulting",
       "Crisis Management"
     ]
+  },
+  {
+    "iconImg": "../src/assets/images/services-icon-1.svg",
+    "serviceName": "Strategy Consulting",
+    "title": "Expert guidance in formulating and growth plans.",
+    "features": ["Product Managemen", "Financial Advisory", "Product Strategy"]
+  },
+  {
+    "iconImg": "../src/assets/images/services-icon-2.svg",
+    "serviceName": "Digital Marketing",
+    "title": "Expert guidance in formulating and growth plans.",
+    "features": [
+      "Marketing Strategies",
+      "Business Development",
+      "Financial Advisory"
+    ]
+  },
+  {
+    "iconImg": "../src/assets/images/services-icon-3.svg",
+    "serviceName": "Web Development",
+    "title": "Expert guidance in formulating and growth plans.",
+    "features": [
+      "Technology Solutions",
+      "Market Research Analysis",
+      "Project Management"
+    ]
+  },
+  {
+    "iconImg": "../src/assets/images/services-icon-4.svg",
+    "serviceName": "Creative Design",
+    "title": "Expert guidance in formulating and growth plans.",
+    "features": [
+      "Training & Development",
+      "Sustainability Consulting",
+      "Crisis Management"
+    ]
   }
 ]

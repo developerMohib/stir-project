@@ -13,6 +13,10 @@ import CaseDetails from "../Pages/CaseDetails/CaseDetails";
 import ContactUs from "../Pages/ContactUs/ContactUs";
 import FaqPage from "../Pages/FaqPage/FaqPage";
 import PrivacyPolicy from "../Pages/PrivacyPolicy/PrivacyPolicy";
+import ProductDetails from "../Pages/ProductDetails/ProductDetails";
+import Product from "../Pages/Product/Product";
+import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
+import Services from "../Pages/Services/Services";
 
 export const router = createBrowserRouter([
   {
@@ -67,6 +71,22 @@ export const router = createBrowserRouter([
       {
         path: "/privacy-policy",
         element: <PrivacyPolicy />,
+      },
+      {
+        path: "/product",
+        element: <Product />,
+      },
+      {
+        path: "/product-details",
+        element: <ProductDetails />,
+      },
+      {
+        path: "/service-details",
+        element: <ServiceDetails />,
+      },
+      {
+        path: "/services",
+        element: <Services />,
       },
     ],
   },

@@ -1,0 +1,20 @@
+[
+  {
+    "personName": "Diana Wilson",
+    "personImg" : "../src/assets/images/team-1.jpg",
+    "proffession": "UI/UX Designer",
+    "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Error tempora quisquam quas autem sunt doloribus aliquam harum illo corrupti. Quae neque fugit, tempore asperiores iste laudantium lla doloribus beatae labore! "
+  },
+  {
+    "personName": "Anne Dew",
+    "personImg" : "../src/assets/images/team-2.jpg",
+    "proffession": "Developer",
+    "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Error tempora quisquam quas autem sunt doloribus aliquam harum illo corrupti. Quae neque fugit, tempore asperiores iste laudantium lla doloribus beatae labore! "
+  },
+  {
+    "personName": "Alex Wilson",
+    "personImg" : "../src/assets/images/team-3.jpg",
+    "proffession": "Manger",
+    "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Error tempora quisquam quas autem sunt doloribus aliquam harum illo corrupti. Quae neque fugit, tempore asperiores iste laudantium lla doloribus beatae labore! "
+  }
+]

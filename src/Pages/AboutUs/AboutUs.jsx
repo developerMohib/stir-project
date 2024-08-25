@@ -8,11 +8,13 @@ import useDataFetch from "../../components/Hooks/useDataFetch";
 
 const AboutUs = () => {
   const { data } = useDataFetch({ url: "/servicesOne.json" });
+  // Get the first four items from the data array
+  const limitedData = data ? data.slice(0, 4) : [];
   return (
     <div>
       <BreadCump bgImg={shapeTwo} pageName={"About Us"} />
       <Aboutus />
-      <Services data={data} />
+      <Services data={limitedData} />
       <Testominal />
       <Contact />
     </div>

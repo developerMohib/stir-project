@@ -1,0 +1,74 @@
+[
+    {
+        "productImg" : "../src/assets/images/product-1.jpg",
+        "productName" : "Smart TRE 5744U6322 (77 Cm)",
+        "productPriceDel" : 30.00,
+        "productPrice" : 25.00
+    },
+    {
+        "productImg" : "../src/assets/images/product-2.jpg",
+        "productName" : "Smart TRE 5744U6322 (77 Cm)",
+        "productPriceDel" : 30.00,
+        "productPrice" : 25.00
+    },
+    {
+        "productImg" : "../src/assets/images/product-3.jpg",
+        "productName" : "Smart TRE 5744U6322 (77 Cm)",
+        "productPriceDel" : 30.00,
+        "productPrice" : 25.00
+    },
+    {
+        "productImg" : "../src/assets/images/product-4.jpg",
+        "productName" : "Smart TRE 5744U6322 (77 Cm)",
+        "productPriceDel" : 30.00,
+        "productPrice" : 25.00
+    },
+    {
+        "productImg" : "../src/assets/images/product-5.jpg",
+        "productName" : "Smart TRE 5744U6322 (77 Cm)",
+        "productPriceDel" : 30.00,
+        "productPrice" : 25.00
+    },
+    {
+        "productImg" : "../src/assets/images/product-6.jpg",
+        "productName" : "Smart TRE 5744U6322 (77 Cm)",
+        "productPriceDel" : 30.00,
+        "productPrice" : 25.00
+    },
+    {
+        "productImg" : "../src/assets/images/product-7.jpg",
+        "productName" : "Smart TRE 5744U6322 (77 Cm)",
+        "productPriceDel" : 30.00,
+        "productPrice" : 25.00
+    },
+    {
+        "productImg" : "../src/assets/images/product-8.jpg",
+        "productName" : "Smart TRE 5744U6322 (77 Cm)",
+        "productPriceDel" : 30.00,
+        "productPrice" : 25.00
+    },
+    {
+        "productImg" : "../src/assets/images/product-9.jpg",
+        "productName" : "Smart TRE 5744U6322 (77 Cm)",
+        "productPriceDel" : 30.00,
+        "productPrice" : 25.00
+    },
+    {
+        "productImg" : "../src/assets/images/product-10.jpg",
+        "productName" : "Smart TRE 5744U6322 (77 Cm)",
+        "productPriceDel" : 30.00,
+        "productPrice" : 25.00
+    },
+    {
+        "productImg" : "../src/assets/images/product-11.jpg",
+        "productName" : "Smart TRE 5744U6322 (77 Cm)",
+        "productPriceDel" : 30.00,
+        "productPrice" : 25.00
+    },
+    {
+        "productImg" : "../src/assets/images/product-12.jpg",
+        "productName" : "Smart TRE 5744U6322 (77 Cm)",
+        "productPriceDel" : 30.00,
+        "productPrice" : 25.00
+    }
+]
