@@ -1,7 +1,5 @@
 import whoWeare from "../../assets/images/who-we-are-img.png"
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../../assets/css/style.css";
-import "../../assets/css/responsive.css";
+
 import { useEffect } from "react";
 
 

@@ -1,0 +1,59 @@
+[
+  {
+    "blogImg": "../src/assets/images/blog-1.jpg",
+    "publishDate": "November 27, 2023",
+    "readTime": "3 Minutes Read",
+    "blogTitle": "A Day in Fashion's Hidden Fashion Realms"
+  },
+  {
+    "blogImg": "../src/assets/images/blog-2.jpg",
+    "publishDate": "November 27, 2023",
+    "readTime": "3 Minutes Read",
+    "blogTitle": "A Wedding Photographer's Awesome Blogs"
+  },
+  {
+    "blogImg": "../src/assets/images/blog-5.jpg",
+    "publishDate": "November 27, 2023",
+    "readTime": "3 Minutes Read",
+    "blogTitle": "Mastering Mindfulness: A Guide to Daily Well-Being"
+  },
+  {
+    "blogImg": "../src/assets/images/blog-6.jpg",
+    "publishDate": "November 27, 2023",
+    "readTime": "3 Minutes Read",
+    "blogTitle": "The Rise of Sustainable Fashion Navigating Eco-Friendly Style"
+  },
+  {
+    "blogImg": "../src/assets/images/blog-7.jpg",
+    "publishDate": "November 27, 2023",
+    "readTime": "3 Minutes Read",
+    "blogTitle": "Tech Innovations in Travel: Redefining the Way We Explore"
+  },
+  {
+    "blogImg": "../src/assets/images/blog-8.jpg",
+    "publishDate": "November 27, 2023",
+    "readTime": "3 Minutes Read",
+    "blogTitle": "The Art of Storytelling: Crafting Compelling Narratives"
+  },
+
+
+  
+  {
+    "blogImg": "../src/assets/images/blog-9.jpg",
+    "publishDate": "November 27, 2023",
+    "readTime": "3 Minutes Read",
+    "blogTitle": "Navigating Remote Work: Tips for Productivity"
+  },
+  {
+    "blogImg": "../src/assets/images/blog-10.jpg",
+    "publishDate": "November 27, 2023",
+    "readTime": "3 Minutes Read",
+    "blogTitle": "Beyond the Plate: Exploring Culinary Around the World"
+  },
+  {
+    "blogImg": "../src/assets/images/blog-11.jpg",
+    "publishDate": "November 27, 2023",
+    "readTime": "3 Minutes Read",
+    "blogTitle": "Empowering Entrepreneurs: Insights Successful Founder"
+  }
+]

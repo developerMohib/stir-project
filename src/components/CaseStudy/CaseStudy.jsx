@@ -1,6 +1,4 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../../assets/css/style.css";
-import "../../assets/css/responsive.css";
+
 import casestudy1 from "../../assets/images/case-study-1.jpg";
 import casestudy2 from "../../assets/images/case-study-2.jpg";
 import casestudy3 from "../../assets/images/case-study-3.jpg";

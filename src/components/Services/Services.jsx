@@ -1,12 +1,8 @@
+// services data is connected from public/servicesOne.json
 
 import PropTypes from "prop-types";
 
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../../assets/css/style.css";
-import "../../assets/css/responsive.css";
-
 const Services = ({ data = [] }) => {
-  console.log("data ", data);
   return (
     <div>
       {/*=== Start Services Area ===*/}

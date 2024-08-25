@@ -5,7 +5,7 @@ import Contact from "../../../components/Contact/Contact";
 import Faq from "../../../components/Faq/Faq";
 import HeroBanner from "../../../components/HeroBanner/HeroBanner";
 import Services from "../../../components/Services/Services";
-import Testominal from "../../../components/Testominal/Testominal";
+import Testominal from "./Testominal/Testominal";
 import WhoWe from "../../../components/WhoWe/WhoWe";
 import WorkBrand from "../../../components/WorkBrand/WorkBrand";
 
@@ -13,7 +13,7 @@ const Home = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // fetching data
+  // fetching data from public/serviecsOne.json
   useEffect(() => {
     fetchData();
   }, []);

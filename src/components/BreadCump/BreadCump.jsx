@@ -1,6 +1,4 @@
-import "../../assets/css/style.css";
-import "../../assets/css/responsive.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 import { Link } from "react-router-dom";
 
 const BreadCump = ({bgImg,pageName}) => {

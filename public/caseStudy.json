@@ -1,0 +1,56 @@
+[
+  {
+    "category": "Marketing",
+    "title": "Business Development and Partnerships",
+    "caseImg": "../src/assets/images/cases-1.jpg",
+    "details": "Our expert consultants offer tailored devices aligned with your craft objective. From market analysis and growth strategies..."
+  },
+  {
+    "category": "Website Design",
+    "title": "Crisis Management and Risk Mitigation",
+    "caseImg": "../src/assets/images/cases-2.jpg",
+    "details": "Our expert consultants offer tailored devices aligned with your craft objective. From market analysis and growth strategies..."
+  },
+  {
+    "category": "Consulting",
+    "title": "Creative Design & Content Creation",
+    "caseImg": "../src/assets/images/cases-3.jpg",
+    "details": "Our expert consultants offer tailored devices aligned with your craft objective. From market analysis and growth strategies..."
+  },
+  {
+    "category": "Marketing",
+    "title": "Driving Engagement and Conversions",
+    "caseImg": "../src/assets/images/cases-4.jpg",
+    "details": "Our expert consultants offer tailored devices aligned with your craft objective. From market analysis and growth strategies..."
+  },
+  {
+    "category": "Website Design",
+    "title": "Success: A Website Revamp Case Study",
+    "caseImg": "../src/assets/images/cases-5.jpg",
+    "details": "Our expert consultants offer tailored devices aligned with your craft objective. From market analysis and growth strategies..."
+  },
+  {
+    "category": "Website Design",
+    "title": "Accelerating Growth through Partnerships",
+    "caseImg": "../src/assets/images/cases-6.jpg",
+    "details": "Our expert consultants offer tailored devices aligned with your craft objective. From market analysis and growth strategies..."
+  },
+  {
+    "category": "Marketing",
+    "title": "Building Brand Authority in a Competitive Market",
+    "caseImg": "../src/assets/images/cases-7.jpg",
+    "details": "Our expert consultants offer tailored devices aligned with your craft objective. From market analysis and growth strategies..."
+  },
+  {
+    "category": "Marketing",
+    "title": "Transforming User Experiences and Retention Rates",
+    "caseImg": "../src/assets/images/cases-8.jpg",
+    "details": "Our expert consultants offer tailored devices aligned with your craft objective. From market analysis and growth strategies..."
+  },
+  {
+    "category": "Website Design",
+    "title": "How Analytics Boosted Marketing Effectiveness",
+    "caseImg": "../src/assets/images/cases-9.jpg",
+    "details": "Our expert consultants offer tailored devices aligned with your craft objective. From market analysis and growth strategies..."
+  }
+]

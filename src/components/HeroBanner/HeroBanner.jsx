@@ -2,13 +2,6 @@ import bannerBg from "../../assets/images/banner-bg-shape.png"
 import vdoImg from "../../assets/images/video-img.jpg"
 import shape1 from "../../assets/images/shape-1.png"
 import shape5 from "../../assets/images/shape-5.png"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlay, faArrowDownLong } from '@fortawesome/free-solid-svg-icons';
-
-import { LuArrowUpRight } from "react-icons/lu";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../../assets/css/style.css";
-import "../../assets/css/responsive.css";
 
 
 const HeroBanner = () => {
@@ -36,7 +29,7 @@ const HeroBanner = () => {
               <a href="services.html" className="banner-btn">
                 <span>
                   Explore Our Services
-                  <LuArrowUpRight />
+                  <i className="fa-solid fa-arrow-up-right"></i>
                 </span>
               </a>
             </div>
@@ -51,7 +44,7 @@ const HeroBanner = () => {
                   href="https://youtu.be/bk7McNUjWgw?si=m_dHkilr3ALPzNl9"
                   className="popup-youtube video-btns position-absolute top-50 start-50 translate-middle text-decoration-none video-btn-animate"
                 >
-                  <FontAwesomeIcon icon={faPlay} className="fa-fw" />
+                  <i className="fa-sharp fa-solid fa-play fa-fw"></i>
                 </a>
               </div>
               <p>
@@ -60,7 +53,7 @@ const HeroBanner = () => {
               </p>
             </div>
             <a href="#about-us" className="scroll-btn">
-            <FontAwesomeIcon className="icon" icon={faArrowDownLong} />
+            <i className="fa-sharp fa-light fa-arrow-down"></i>
             </a>
           </div>
         </div>

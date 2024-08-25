@@ -1,15 +1,6 @@
-import "bootstrap/dist/css/bootstrap.min.css";
+
 import white_logo from "../../assets/images/white-logo.svg";
-import "../../assets/css/style.css";
-import "../../assets/css/responsive.css";
 import { Link } from "react-router-dom";
-import {
-  faFacebookF,
-  faTwitter,
-  faInstagram,
-  faLinkedinIn,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navbar = () => {
   return (
@@ -31,7 +22,7 @@ const Navbar = () => {
                   <ul className="dropdown-menu">
                     <li className="nav-item">
                       <Link to="/" className="nav-link">
-                        Creative Agency
+                        Creative Agency 
                       </Link>
                     </li>
                     <li className="nav-item">
@@ -51,7 +42,7 @@ const Navbar = () => {
                   <Link className="nav-link dropdown-toggle active">Pages</Link>
                   <ul className="dropdown-menu">
                     <li className="nav-item">
-                      <Link to="/about-us.html" className="nav-link">
+                      <Link to="/about-us" className="nav-link">
                         About Us
                       </Link>
                     </li>
@@ -200,22 +191,22 @@ const Navbar = () => {
                   <li>
                     <Link to="https://facebook.com/" target="_blank">
                       {" "}
-                      <FontAwesomeIcon icon={faFacebookF} />{" "}
+                      <i className="fa-brands fa-facebook-f"></i>
                     </Link>
                   </li>
                   <li>
                     <Link to="https://twitter.com/" target="_blank">
-                      <FontAwesomeIcon icon={faTwitter} />
+                    <i className="fa-brands fa-twitter"></i>
                     </Link>
                   </li>
                   <li>
                     <Link to="https://instagram.com/" target="_blank">
-                      <FontAwesomeIcon icon={faInstagram} />
+                    <i className="fa-brands fa-instagram"></i>
                     </Link>
                   </li>
                   <li>
                     <Link to="https://linkedin.com/" target="_blank">
-                      <FontAwesomeIcon icon={faLinkedinIn} />
+                    <i className="fa-brands fa-linkedin-in"></i>
                     </Link>
                   </li>
                 </ul>

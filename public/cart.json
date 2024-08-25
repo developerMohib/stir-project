@@ -1,0 +1,20 @@
+[
+    {
+        "itemName" : "Wireless Router",
+        "itemColor" : "Color: White",
+        "itemPrice" : 25.00 ,
+        "itemImg" : "../src/assets/images/cart-1.jpg"
+    },
+    {
+        "itemName" : "Bluetooth Earphone",
+        "itemColor" : "Color: Black",
+        "itemPrice" : 25.00 ,
+        "itemImg" : "../src/assets/images/cart-2.jpg"
+    },
+    {
+        "itemName" : "AC DC Table Fan",
+        "itemColor" : "Color: White",
+        "itemPrice" : 25.00 ,
+        "itemImg" : "../src/assets/images/cart-3.jpg"
+    }
+]

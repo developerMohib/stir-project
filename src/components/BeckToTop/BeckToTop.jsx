@@ -1,7 +1,4 @@
 import { useState, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
-
 
 const BeckToTop = () => {
   const [isActive, setIsActive] = useState(false);
@@ -37,8 +34,7 @@ const BeckToTop = () => {
       <div
         className={`back-to-top text-center ${isActive ? 'active' : ''}`}
         onClick={scrollToTop}
-      >
-         <FontAwesomeIcon icon={faAngleUp} />
+      ><i className="icofont-simple-up"></i>
       </div>
     </div>
   );

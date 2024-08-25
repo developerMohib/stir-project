@@ -1,8 +1,6 @@
 import four0four from "../../../assets/images/404.png"
 import { Link } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../../../assets/css/style.css"
-import "../../../assets/css/responsive.css";
+
 
 const Error404 = () => {
   return (

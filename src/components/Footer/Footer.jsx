@@ -1,14 +1,3 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../../assets/css/style.css";
-import "../../assets/css/responsive.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
-import {
-  faFacebookF,
-  faTwitter,
-  faInstagram,
-  faLinkedinIn,
-} from "@fortawesome/free-brands-svg-icons";
 import white_logo from "../../assets/images/white-logo.svg";
 import { Link } from "react-router-dom";
 
@@ -31,23 +20,22 @@ const Footer = () => {
                 <ul className="social-link ps-0 mb-0 list-unstyled">
                   <li>
                     <Link to="https://facebook.com/" target="_blank">
-                      {" "}
-                      <FontAwesomeIcon icon={faFacebookF} />{" "}
+										<i className="fa-brands fa-facebook-f"></i>
                     </Link>
                   </li>
                   <li>
                     <Link to="https://twitter.com/" target="_blank">
-                      <FontAwesomeIcon icon={faTwitter} />
+										<i className="fa-brands fa-twitter"></i>
                     </Link>
                   </li>
                   <li>
-                    <Link to="https://instagram.com/" target="_blank">
-                      <FontAwesomeIcon icon={faInstagram} />
+                    <Link to="https://instagram.com/" target="_blank">                      
+										<i className="fa-brands fa-instagram"></i>
                     </Link>
                   </li>
                   <li>
                     <Link to="https://linkedin.com/" target="_blank">
-                      <FontAwesomeIcon icon={faLinkedinIn} />
+                     <i className="fa-brands fa-linkedin-in" />
                     </Link>
                   </li>
                 </ul>
@@ -108,7 +96,7 @@ const Footer = () => {
                     type="submit"
                     className="p-0 bg-transparent border-0 send-btn position-absolute top-50 end-0 translate-middle-y"
                   >
-                    <FontAwesomeIcon icon={faPaperPlane} />
+                    <i className="fa-light fa-paper-plane-top"></i>
                   </button>
                 </form>
               </div>

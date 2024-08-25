@@ -1,60 +1,102 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../../assets/css/style.css";
-import "../../assets/css/responsive.css";
-
+import testominal3 from "../../assets/images/testimonial-3.png";
+import testominal6 from "../../assets/images/testimonial-6.jpg";
 const Testominal = () => {
   return (
-    <div>
-      {/*=== Start Testimonials Area ===*/}
-      <div className="testimonial-area pb-100">
-        <div className="container">
-          <div className="testimonial-slide owl-carousel owl-theme">
-            <div className="d-md-flex align-items-center testimonial-single-item">
-              <div className="flex-shrink-0">
-                <img
-                  src="assets/images/testimonial-1.jpg"
-                  className="testimonial-img"
-                  alt="testimonial"
-                />
-              </div>
-              <div className="flex-grow-1 ms-md-4 mt-3 mt-md-0">
-                <p>
-                  Established with a vision to redefine the art of storytelling
-                  &amp; design, we have been at the forefront of delivering
-                  groundbreaking creative solutions since our inception. Our
-                  agency is a dynamic powerhouse of talent.
-                </p>
-                <h4>
-                  Mark Phillips / <span>Product Designer</span>
-                </h4>
-              </div>
-              <img src="assets/images/quat.svg" className="quat" alt="quat" />
+    <div className="testimonials-area-three overflow-hidden">
+      <div className="container">
+        <div className="row align-items-end">
+          <div className="col-lg-8">
+            <div className="section-title ms-0 text-start">
+              <h2>Testimonials</h2>
             </div>
-            <div className="d-md-flex align-items-center testimonial-single-item">
-              <div className="flex-shrink-0">
-                <img
-                  src="assets/images/testimonial-2.jpg"
-                  className="testimonial-img"
-                  alt="testimonial"
-                />
-              </div>
-              <div className="flex-grow-1 ms-md-4 mt-3 mt-md-0">
+            <div className="testimonial-slide-two owl-carousel owl-theme">
+              <div className="testimonials-single-item-two style-three">
+                <ul className="ps-0 list-unstyled d-flex gap-2 review">
+                  <li>
+                    <i className="fa-solid fa-star" />
+                  </li>
+                  <li>
+                    <i className="fa-solid fa-star" />
+                  </li>
+                  <li>
+                    <i className="fa-solid fa-star" />
+                  </li>
+                  <li>
+                    <i className="fa-solid fa-star" />
+                  </li>
+                  <li>
+                    <i className="fa-solid fa-star" />
+                  </li>
+                </ul>
                 <p>
-                  With Established a vision to redefine the art of storytelling
-                  &amp; design, we have been at the forefront of groundbreaking
-                  delivering creative solutions since our inception. Our agency
-                  is a dynamic powerhouse talent of.
+                  Whether it's enhancing market visibility, improving
+                  operational efficiency, or implementing cutting-edge
+                  technologies, our agency offers a wide spectrum of services.
+                  From strategic consulting &amp; digital transformation to
+                  marketing strategies &amp; financial advisory...
                 </p>
-                <h4>
-                  Alex Phillips / <span>Product Sale</span>
-                </h4>
+                <div className="d-flex align-items-center info">
+                  <div className="flex-shrink-0">
+                    <img
+                      src={testominal3}
+                      className="rounded-circle"
+                      alt="testimonial"
+                    />
+                  </div>
+                  <div className="flex-grow-1 ms-3">
+                    <h3>Brandi Rowe</h3>
+                    <span>Marketing Lead at Technlogia</span>
+                  </div>
+                </div>
               </div>
-              <img src="assets/images/quat.svg" className="quat" alt="quat" />
+              <div className="testimonials-single-item-two style-three">
+                <ul className="ps-0 list-unstyled d-flex gap-2 review">
+                  <li>
+                    <i className="fa-solid fa-star" />
+                  </li>
+                  <li>
+                    <i className="fa-solid fa-star" />
+                  </li>
+                  <li>
+                    <i className="fa-solid fa-star" />
+                  </li>
+                  <li>
+                    <i className="fa-solid fa-star" />
+                  </li>
+                  <li>
+                    <i className="fa-solid fa-star" />
+                  </li>
+                </ul>
+                <p>
+                  Whether it's enhancing market visibility, improving
+                  operational efficiency, or implementing cutting-edge
+                  technologies, our agency offers a wide spectrum of services.
+                  From strategic consulting &amp; digital transformation to
+                  marketing strategies &amp; financial advisory...
+                </p>
+                <div className="d-flex align-items-center info">
+                  <div className="flex-shrink-0">
+                    <img
+                      src={testominal3}
+                      className="rounded-circle"
+                      alt="testimonial"
+                    />
+                  </div>
+                  <div className="flex-grow-1 ms-3">
+                    <h3>Brandi Rowe</h3>
+                    <span>Marketing Lead at Technlogia</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4">
+            <div className="testimonial-img-three mt-4 mt-lg-0">
+              <img src={testominal6} alt="testimonial" />
             </div>
           </div>
         </div>
       </div>
-      {/*=== End Testimonials Area ===*/}
     </div>
   );
 };

@@ -10,11 +10,6 @@ import brand9 from "../../assets/images/brands-9.png";
 import brand10 from "../../assets/images/brands-10.png";
 import aboutUs from "../../assets/images/about-us.png"
 import { Link } from "react-router-dom";
-import { LuArrowUpRight } from "react-icons/lu";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../../assets/css/style.css";
-import "../../assets/css/responsive.css";
-
 
 const WorkBrand = () => {
   return (
@@ -129,7 +124,7 @@ const WorkBrand = () => {
                   >
                     <span>Learn More</span>
                     <i className="fa-solid fa-angle-up"></i>
-                    <LuArrowUpRight className="text-white" />
+                    <i className="fa-solid fa-arrow-up-right"></i>
                   </a>
                 </div>
               </div>
