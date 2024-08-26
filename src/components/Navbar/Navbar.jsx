@@ -1,9 +1,28 @@
+import { useEffect, useState } from "react";
 import white_logo from "../../assets/images/white-logo.svg";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [isSticky, setIsSticky] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 150) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="navbar-area bg-black">
+     <div className={`navbar-area bg-black ${isSticky ? 'is-sticky' : ''}`}>
       {/*=== Start Main Navbar Section ===*/}
       <div className="main-nav">
         <div className="container mw-1680">
