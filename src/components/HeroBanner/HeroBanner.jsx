@@ -1,10 +1,33 @@
-import bannerBg from "../../assets/images/banner-bg-shape.png"
-import vdoImg from "../../assets/images/video-img.jpg"
-import shape1 from "../../assets/images/shape-1.png"
-import shape5 from "../../assets/images/shape-5.png"
+import bannerBg from "../../assets/images/banner-bg-shape.png";
+import vdoImg from "../../assets/images/video-img.jpg";
+import shape1 from "../../assets/images/shape-1.png";
+import shape5 from "../../assets/images/shape-5.png";
+
+import { useEffect } from 'react';
+import $ from 'jquery';
+import "magnific-popup";
+import "magnific-popup/dist/magnific-popup.css"
 
 
 const HeroBanner = () => {
+
+  useEffect(() => {
+    // Initialize magnificPopup
+    $('.popup-youtube').magnificPopup({
+      disableOn: 300,
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      fixedContentPos: false,
+      removalDelay: 160,
+      preloader: false,
+    });
+
+    // Cleanup function to remove event listeners
+    return () => {
+      $('.popup-youtube').magnificPopup('close');
+    };
+  }, []);
+
   return (
     <div>
       {/*=== Start Banner Area ===*/}
@@ -35,13 +58,9 @@ const HeroBanner = () => {
             </div>
             <div className="creative-agency">
               <div className="position-relative d-block text-center m-auto video-img">
-                <img
-                  src={vdoImg}
-                  className="rounded-pill"
-                  alt="video-img"
-                />
+                <img src={vdoImg} className="rounded-pill" alt="video-img" />
                 <a
-                  href="https://youtu.be/bk7McNUjWgw?si=m_dHkilr3ALPzNl9"
+                  href="https://www.youtube.com/watch?v=oGOO94rRzCQ"
                   className="popup-youtube video-btns position-absolute top-50 start-50 translate-middle text-decoration-none video-btn-animate"
                 >
                   <i className="fa-sharp fa-solid fa-play fa-fw"></i>
@@ -53,20 +72,12 @@ const HeroBanner = () => {
               </p>
             </div>
             <a href="#about-us" className="scroll-btn">
-            <i className="fa-sharp fa-light fa-arrow-down"></i>
+              <i className="fa-sharp fa-light fa-arrow-down icon"></i>
             </a>
           </div>
         </div>
-        <img
-          src={shape1}
-          className="shape shape-1"
-          alt="shape"
-        />
-        <img
-          src={shape5}
-          className="shape shape-5"
-          alt="shape"
-        />
+        <img src={shape1} className="shape shape-1" alt="shape" />
+        <img src={shape5} className="shape shape-5" alt="shape" />
       </div>
       {/*=== End Banner Area ===*/}
     </div>
