@@ -1,0 +1,22 @@
+[
+  {
+    "iconImg": "../src/assets/images/services-icon-5.svg",
+    "serviceName": "Strategic Consulting",
+    "title": "Our expert consultants offer tailored devices aligned with your craft objective. From market analysis and growth strategies..."
+  },
+  {
+    "iconImg": "../src/assets/images/services-icon-6.svg",
+    "serviceName": "Digital Transformation",
+    "title": "Our expert consultants offer tailored devices aligned with your craft objective. From market analysis and growth strategies..."
+  },
+  {
+    "iconImg": "../src/assets/images/services-icon-7.svg",
+    "serviceName": "Marketing and Branding",
+    "title": "Our expert consultants offer tailored devices aligned with your craft objective. From market analysis and growth strategies..."
+  },
+  {
+    "iconImg": "../src/assets/images/services-icon-8.svg",
+    "serviceName": "Financial Advisory Services",
+    "title": "Our expert consultants offer tailored devices aligned with your craft objective. From market analysis and growth strategies..."
+  }
+]

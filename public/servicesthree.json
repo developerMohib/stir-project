@@ -1,0 +1,32 @@
+[
+  {
+    "iconImg": "../src/assets/images/services-icon-9.svg",
+    "serviceName": "Branding Design",
+    "title": "We care success relationships fuel real success We love building brands and helping"
+  },
+  {
+    "iconImg": "../src/assets/images/services-icon-10.svg",
+    "serviceName": "Website Development",
+    "title": "We care success relationships fuel real success We love building brands and helping"
+  },
+  {
+    "iconImg": "../src/assets/images/services-icon-11.svg",
+    "serviceName": "Digital Marketing",
+    "title": "We care success relationships fuel real success We love building brands and helping"
+  },
+  {
+    "iconImg": "../src/assets/images/services-icon-12.svg",
+    "serviceName": "Social Media Management",
+    "title": "We care success relationships fuel real success We love building brands and helping"
+  },
+  {
+    "iconImg": "../src/assets/images/services-icon-13.svg",
+    "serviceName": "Analytics and Performance",
+    "title": "We care success relationships fuel real success We love building brands and helping"
+  },
+  {
+    "iconImg": "../src/assets/images/services-icon-13.svg",
+    "serviceName": "Search Engine Optimization",
+    "title": "We care success relationships fuel real success We love building brands and helping"
+  }
+]

@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
-import service5 from "../../../../assets/images/services-icon-5.svg";
-import service6 from "../../../../assets/images/services-icon-6.svg";
-import service7 from "../../../../assets/images/services-icon-7.svg";
-import service8 from "../../../../assets/images/services-icon-8.svg";
+import useDataFetch from "../../../../components/Hooks/useDataFetch";
 const Services = () => {
+  const { data } = useDataFetch({ url: "/services.json" });
   return (
     <div className="services-area-two pb-100 overflow-hidden pos">
       <div className="container">
@@ -13,74 +11,23 @@ const Services = () => {
         </div>
         <div className="services-wrap" data-cues="slideInUp">
           <div className="services-slide owl-carousel owl-theme">
-            <div className="services-single-item-two">
-              <span className="borders" />
-              <h3>
-              <Link to="/service-details">Strategic Consulting</Link>
-              </h3>
-              <p>
-                Our expert consultants offer tailored devices aligned with your
-                craft objective. From market analysis and growth strategies...
-              </p>
-              <div className="d-flex justify-content-between align-items-center">
-                <img src={service5} alt="services-icon" />
-                <Link to="service-details" className="read-btn">
-                  {" "}
-                  <i className="fa-regular fa-arrow-right" />
-                </Link>
+            {data?.map((ser, idx) => (
+              <div key={idx} className="services-single-item-two">
+                <span className="borders" />
+                <h3>
+                  <Link to="/service-details"> {ser.serviceName} </Link>
+                </h3>
+                <p> {ser.title}
+                </p>
+                <div className="d-flex justify-content-between align-items-center">
+                  <img src={ser.iconImg} alt="services-icon" />
+                  <Link to="service-details" className="read-btn">
+                    {" "}
+                    <i className="fa-regular fa-arrow-right" />
+                  </Link>
+                </div>
               </div>
-            </div>
-            <div className="services-single-item-two">
-              <span className="borders" />
-              <h3>
-              <Link to="/service-details">Digital Transformation</Link>
-              </h3>
-              <p>
-                Our expert consultants offer tailored devices aligned with your
-                craft objective. From market analysis and growth strategies...
-              </p>
-              <div className="d-flex justify-content-between align-items-center">
-                <img src={service6} alt="services-icon" />
-                <Link to="service-details" className="read-btn">
-                  {" "}
-                  <i className="fa-regular fa-arrow-right" />
-                </Link>
-              </div>
-            </div>
-            <div className="services-single-item-two">
-              <span className="borders" />
-              <h3>
-                <Link to="/service-details">Marketing and Branding</Link>
-              </h3>
-              <p>
-                Our expert consultants offer tailored devices aligned with your
-                craft objective. From market analysis and growth strategies...
-              </p>
-              <div className="d-flex justify-content-between align-items-center">
-                <img src={service7} alt="services-icon" />
-                <Link to="service-details" className="read-btn">
-                  {" "}
-                  <i className="fa-regular fa-arrow-right" />
-                </Link>
-              </div>
-            </div>
-            <div className="services-single-item-two">
-              <span className="borders" />
-              <h3>
-              <Link to="/service-details">Financial Advisory Services</Link>
-              </h3>
-              <p>
-                Our expert consultants offer tailored devices aligned with your
-                craft objective. From market analysis and growth strategies...
-              </p>
-              <div className="d-flex justify-content-between align-items-center">
-                <img src={service8} alt="services-icon" />
-                <Link to="service-details" className="read-btn">
-                  {" "}
-                  <i className="fa-regular fa-arrow-right" />
-                </Link>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
         <div className="text-center mt-lg-4 pt-lg-2">
