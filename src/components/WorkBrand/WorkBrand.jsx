@@ -8,7 +8,7 @@ import brand7 from "../../assets/images/brands-7.png";
 import brand8 from "../../assets/images/brands-8.png";
 import brand9 from "../../assets/images/brands-9.png";
 import brand10 from "../../assets/images/brands-10.png";
-import aboutUs from "../../assets/images/about-us.png"
+import aboutUs from "../../assets/images/about-us.png";
 import { Link } from "react-router-dom";
 
 const WorkBrand = () => {
@@ -118,13 +118,13 @@ const WorkBrand = () => {
                   </div>
                 </div>
                 <div className="d-inline-block">
-                  <a
-                    href="about-us.html"
-                   className="circle-btn text-decoration-none d-flex align-items-center justify-content-center"
+                  <Link
+                    to="/about-us"
+                    className="circle-btn text-decoration-none d-flex align-items-center justify-content-center"
                   >
                     <span>Learn More</span>
                     <i className="fa-solid fa-arrow-up-right"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -1,14 +1,13 @@
-import whoWeare from "../../assets/images/who-we-are-img.png"
-
+import { Link } from "react-router-dom";
+import whoWeare from "../../assets/images/who-we-are-img.png";
 import { useEffect } from "react";
-
 
 const WhoWe = () => {
   useEffect(() => {
-    const bars = document.querySelectorAll('.skill-bar');
+    const bars = document.querySelectorAll(".skill-bar");
     bars.forEach((bar) => {
-      const percentage = bar.getAttribute('data-percentage');
-      const progressContent = bar.querySelector('.progress-content');
+      const percentage = bar.getAttribute("data-percentage");
+      const progressContent = bar.querySelector(".progress-content");
       setTimeout(() => {
         progressContent.style.width = percentage;
       }, 500);
@@ -39,7 +38,7 @@ const WhoWe = () => {
                       <span className="progress-number-wrapper">
                         <span className="progress-number-mark">
                           <span className="percent" />
-                          <span className="down-arrow" />
+                          <span className="down-arrow"  />
                         </span>
                       </span>
                     </h4>
@@ -79,22 +78,19 @@ const WhoWe = () => {
                   </div>
                 </div>
                 <div className="d-inline-block">
-                  <a
-                    href="about-us.html"
+                  <Link
+                    to="/about-us"
                     className="circle-btn d-inline-block text-decoration-none mt-4 mt-xl-5 d-flex align-items-center"
                   >
                     <span>Learn More</span>
                     <i className="fa-solid fa-arrow-up-right" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
             <div className="col-lg-6">
               <div className="who-we-are-img" data-cues="slideInUp">
-                <img
-                  src={whoWeare}
-                  alt="who-we-are-img"
-                />
+                <img src={whoWeare} alt="who-we-are-img" />
               </div>
             </div>
           </div>

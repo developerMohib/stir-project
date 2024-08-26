@@ -1,6 +1,7 @@
 // services data is connected from public/servicesOne.json
 
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const Services = ({ data = [] }) => {
   return (
@@ -23,7 +24,7 @@ const Services = ({ data = [] }) => {
                     />
                   </div>
                   <h3>
-                    <a href="service-details.html">{service.serviceName}</a>
+                    <Link to="/service-details" >{service.serviceName}</Link>
                   </h3>
                   <p>{service.title}</p>
                   <ul className="ps-0 mb-0 list-unstyled">

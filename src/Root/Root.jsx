@@ -13,8 +13,8 @@ const Root = () => {
   return (
     <div>
       <Preloader />
-      <TopBar/>
-      <Navbar/>
+      <TopBar />
+      <Navbar />
       <Outlet />
       <Footer />
     </div>
