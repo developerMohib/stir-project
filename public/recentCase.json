@@ -1,0 +1,38 @@
+[
+    {
+        "category": "Marketing",
+        "image" : "../src/assets/images/cases-1.jpg",
+        "title":"Business Development and Partnerships",
+        "about" : "Our expert consultants offer tailored devices aligned with your craft objective. From market analysis strategies..."
+    },
+    {
+        "category": "Website Design",
+        "image" : "../src/assets/images/cases-2.jpg",
+        "title":"Crisis Management and Risk Mitigation",
+        "about" : "Our expert consultants offer tailored devices aligned with your craft objective. From market analysis strategies..."
+    },
+    {
+        "category": "Consulting",
+        "image" : "../src/assets/images/cases-3.jpg",
+        "title":"Creative Design & Content Creation",
+        "about" : "Our expert consultants offer tailored devices aligned with your craft objective. From market analysis strategies..."
+    },
+    {
+        "category": "Marketing",
+        "image" : "../src/assets/images/cases-1.jpg",
+        "title":"Business Development and Partnerships",
+        "about" : "Our expert consultants offer tailored devices aligned with your craft objective. From market analysis strategies..."
+    },
+    {
+        "category": "Website Design",
+        "image" : "../src/assets/images/cases-2.jpg",
+        "title":"Crisis Management and Risk Mitigation",
+        "about" : "Our expert consultants offer tailored devices aligned with your craft objective. From market analysis strategies..."
+    },
+    {
+        "category": "Consulting",
+        "image" : "../src/assets/images/cases-3.jpg",
+        "title":"Creative Design & Content Creation",
+        "about" : "Our expert consultants offer tailored devices aligned with your craft objective. From market analysis strategies..."
+    }
+]

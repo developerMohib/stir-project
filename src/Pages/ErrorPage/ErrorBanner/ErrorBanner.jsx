@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import bannerShape from "../../../assets/images/banner-bg-shape.png"
 const ErrorBanner = () => {
   return (
@@ -12,7 +13,7 @@ const ErrorBanner = () => {
             <h2>404 Error page</h2>
             <ul className="ps-0 mb-0 list-unstyled justify-content-center page-breadcrumb d-flex flex-wrap gap-4">
               <li>
-                <a href="index.html">Home</a>
+                <Link to="/" >Home</Link>
               </li>
               <li>
                 <span className="active">404 Error page</span>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import PropTypes from 'prop-types';
 const BreadCump = ({ bgImg, pageName }) => {
   return (
     <div
@@ -22,5 +22,8 @@ const BreadCump = ({ bgImg, pageName }) => {
     </div>
   );
 };
-
+BreadCump.propTypes = {
+  bgImg : PropTypes.string,
+  pageName : PropTypes.string,
+}
 export default BreadCump;

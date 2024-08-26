@@ -55,7 +55,7 @@ export const router = createBrowserRouter([
         element: <Cart />,
       },
       {
-        path: "/check-out",
+        path: "/checkout",
         element: <Checkout />,
       },
       {
@@ -63,11 +63,11 @@ export const router = createBrowserRouter([
         element: <CaseStudy />,
       },
       {
-        path: "/case-study-details",
+        path: "/cases-study-details",
         element: <CaseDetails />,
       },
       {
-        path: "/contact",
+        path: "/contact-us",
         element: <ContactUs />,
       },
       {
@@ -83,7 +83,7 @@ export const router = createBrowserRouter([
         element: <PrivacyPolicy />,
       },
       {
-        path: "/product",
+        path: "/products",
         element: <Product />,
       },
       {

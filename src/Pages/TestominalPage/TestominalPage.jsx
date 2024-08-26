@@ -1,7 +1,6 @@
 import BreadCump from "../../components/BreadCump/BreadCump";
 import shapeBg from "../../assets/images/banner-bg-shape.png";
 import useDataFetch from "../../components/Hooks/useDataFetch";
-import Testominal from "../../components/Testominal/Testominal";
 const TestominalPage = () => {
   const { data } = useDataFetch({ url: "/testominal.json" });
   console.log('data', data)

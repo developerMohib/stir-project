@@ -1,4 +1,3 @@
-
 import white_logo from "../../assets/images/white-logo.svg";
 import { Link } from "react-router-dom";
 
@@ -22,7 +21,7 @@ const Navbar = () => {
                   <ul className="dropdown-menu">
                     <li className="nav-item">
                       <Link to="/" className="nav-link">
-                        Creative Agency 
+                        Creative Agency
                       </Link>
                     </li>
                     <li className="nav-item">
@@ -47,17 +46,17 @@ const Navbar = () => {
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to="team.html" className="nav-link">
+                      <Link to="/team" className="nav-link">
                         Team
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to="faq.html" className="nav-link">
+                      <Link to="/faq" className="nav-link">
                         FAQ
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to="testimonials.html" className="nav-link">
+                      <Link to="/testimonials" className="nav-link">
                         Testimonials
                       </Link>
                     </li>
@@ -67,34 +66,34 @@ const Navbar = () => {
                       </Link>
                       <ul className="dropdown-menu">
                         <li className="nav-item">
-                          <Link to="sign-in.html" className="nav-link">
+                          <Link to="/sign-in" className="nav-link">
                             Sign In
                           </Link>
                         </li>
                         <li className="nav-item">
-                          <Link to="sign-up.html" className="nav-link">
+                          <Link to="/sign-up" className="nav-link">
                             Sign Up
                           </Link>
                         </li>
                       </ul>
                     </li>
                     <li className="nav-item">
-                      <Link to="privacy-policy.html" className="nav-link">
+                      <Link to="/privacy-policy" className="nav-link">
                         Privacy Policy
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to="terms-conditions.html" className="nav-link">
+                      <Link to="/terms-conditions" className="nav-link">
                         Terms &amp; Conditions
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to="404.html" className="nav-link active">
+                      <Link to="/404" className="nav-link active">
                         Error
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to="contact-us.html" className="nav-link">
+                      <Link to="/contact-us" className="nav-link">
                         Contact Us
                       </Link>
                     </li>
@@ -104,12 +103,12 @@ const Navbar = () => {
                   <Link className="nav-link dropdown-toggle"> Services </Link>
                   <ul className="dropdown-menu">
                     <li className="nav-item">
-                      <Link to="services.html" className="nav-link">
+                      <Link to="/services" className="nav-link">
                         Services
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to="service-details.html" className="nav-link">
+                      <Link to="/service-details" className="nav-link">
                         Service Details
                       </Link>
                     </li>
@@ -119,15 +118,12 @@ const Navbar = () => {
                   <Link className="nav-link dropdown-toggle"> Case Study </Link>
                   <ul className="dropdown-menu">
                     <li className="nav-item">
-                      <Link href="case-study.html" className="nav-link">
+                      <Link to="/case-study" className="nav-link">
                         Case Study
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link
-                        href="cases-study-details.html"
-                        className="nav-link"
-                      >
+                      <Link to="/cases-study-details" className="nav-link">
                         Cases Study Details
                       </Link>
                     </li>
@@ -137,22 +133,22 @@ const Navbar = () => {
                   <Link className="nav-link dropdown-toggle"> Shop </Link>
                   <ul className="dropdown-menu">
                     <li className="nav-item">
-                      <Link to="products.html" className="nav-link">
+                      <Link to="/products" className="nav-link">
                         Products
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to="cart.html" className="nav-link">
+                      <Link to="/cart" className="nav-link">
                         Cart
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to="checkout.html" className="nav-link">
+                      <Link to="/checkout" className="nav-link">
                         Checkout
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to="product-details.html" className="nav-link">
+                      <Link to="/product-details" className="nav-link">
                         Product Details
                       </Link>
                     </li>
@@ -162,12 +158,12 @@ const Navbar = () => {
                   <Link className="nav-link dropdown-toggle"> Blog </Link>
                   <ul className="dropdown-menu">
                     <li className="nav-item">
-                      <Link href="blog.html" className="nav-link">
+                      <Link to="/blog" className="nav-link">
                         Blog
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to="single-blog.html" className="nav-link">
+                      <Link to="/single-blog" className="nav-link">
                         Single Blog Page
                       </Link>
                     </li>
@@ -180,7 +176,7 @@ const Navbar = () => {
                     className="form-select"
                     aria-label="Default select example"
                   >
-                    <option defaultValue >Language</option>
+                    <option defaultValue>Language</option>
                     <option value={1}>English</option>
                     <option value={2}>Arabic</option>
                     <option value={3}>China</option>
@@ -196,17 +192,17 @@ const Navbar = () => {
                   </li>
                   <li>
                     <Link to="https://twitter.com/" target="_blank">
-                    <i className="fa-brands fa-twitter"></i>
+                      <i className="fa-brands fa-twitter"></i>
                     </Link>
                   </li>
                   <li>
                     <Link to="https://instagram.com/" target="_blank">
-                    <i className="fa-brands fa-instagram"></i>
+                      <i className="fa-brands fa-instagram"></i>
                     </Link>
                   </li>
                   <li>
                     <Link to="https://linkedin.com/" target="_blank">
-                    <i className="fa-brands fa-linkedin-in"></i>
+                      <i className="fa-brands fa-linkedin-in"></i>
                     </Link>
                   </li>
                 </ul>
@@ -221,9 +217,9 @@ const Navbar = () => {
         <div className="container">
           <div className="mobile-menu">
             <div className="logo">
-              <a href="index.html">
+              <Link to="/">
                 <img src={white_logo} alt="logo" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
