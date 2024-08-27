@@ -5,7 +5,7 @@ const FaqPage = () => {
     return (
         <div>
             <BreadCump bgImg={shapeBg} pageName={"FAQ"} />
-            <Faq/>
+            <Faq hideDiv={"d-none"} />
         </div>
     );
 };

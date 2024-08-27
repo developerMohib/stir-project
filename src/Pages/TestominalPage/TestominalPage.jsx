@@ -1,6 +1,7 @@
 import BreadCump from "../../components/BreadCump/BreadCump";
 import shapeBg from "../../assets/images/banner-bg-shape.png";
 import useDataFetch from "../../components/Hooks/useDataFetch";
+import Pagination from "../../components/Pagination/Pagination";
 const TestominalPage = () => {
   const { data } = useDataFetch({ url: "/testominal.json" });
   console.log('data', data)
@@ -51,6 +52,7 @@ const TestominalPage = () => {
             ))}
           </div>
         </div>
+        <Pagination link={"testimonials"} />
       </div>
     </div>
   );

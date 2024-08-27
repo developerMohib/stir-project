@@ -120,6 +120,27 @@ const Navbar = () => {
                         Testimonials
                       </Link>
                     </li>
+
+                    <li className="nav-item">
+											<Link className="nav-link dropdown-toggle">
+												Authentication             
+											</Link>
+		
+											<ul className="dropdown-menu">
+												<li className="nav-item">
+                        <Link to="/sign-in" className={`nav-link ${
+                          location.pathname === "/sign-in" ? "active" : ""
+                        }`}>Sign In</Link>
+												</li>
+												<li className="nav-item">
+													<Link to="/sign-up" className={`nav-link ${
+                          location.pathname === "/sign-up" ? "active" : ""
+                        }`}>Sign Up</Link>
+												</li>
+											</ul>
+										</li>
+
+
                     <li className="nav-item">
                       <Link
                         to="/privacy-policy"

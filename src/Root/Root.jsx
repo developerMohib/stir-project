@@ -8,6 +8,7 @@ import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 import TopBar from "../components/TopBar/TopBar";
 import Preloader from "../components/Preloader/Preloader";
+import BeckToTop from "../components/BeckToTop/BeckToTop";
 
 const Root = () => {
   const location = useLocation();
@@ -19,6 +20,7 @@ const Root = () => {
       <Navbar />
       <Outlet />
       <Footer />
+      <BeckToTop />
     </div>
   );
 };

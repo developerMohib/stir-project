@@ -1,6 +1,7 @@
 import shapeBg from "../../assets/images/banner-bg-shape.png";
 import BreadCump from "../../components/BreadCump/BreadCump";
 import signin from "../../assets/images/sign-in-img.png";
+import { Link } from "react-router-dom";
 
 const SignIn = () => {
   return (
@@ -18,12 +19,12 @@ const SignIn = () => {
               <div className="authentication-form">
                 <ul className="ps-0 list-unstyled d-flex authentication-nav">
                   <li>
-                    <a href="sign-in.html" className="active">
+                    <Link to="/sign-in" className="active">
                       Sign In
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="sign-up.html">Sing Up</a>
+                    <Link to="/sign-up">Sing Up</Link>
                   </li>
                 </ul>
                 <h3>Log in to your account</h3>
@@ -49,9 +50,9 @@ const SignIn = () => {
                     </div>
                   </div>
                   <div className="form-group mb-4">
-                    <a href="sign-in.html" className="forgot">
+                    <Link to="sign-in.html" className="forgot">
                       Forgot your Password?
-                    </a>
+                    </Link>
                   </div>
                   <div className="form-group mb-4">
                     <button type="submit" className="main-btn">
@@ -61,29 +62,29 @@ const SignIn = () => {
                   <p className="mb-4">Or register with an account</p>
                   <ul className="social-link ps-0 mb-0 list-unstyled">
                     <li>
-                      <a href="https://www.apple.com/" target="_blank">
+                      <Link to="https://www.apple.com/" target="_blank">
                         <i className="fa-brands fa-apple" />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="https://www.github.com/" target="_blank">
+                      <Link to="https://www.github.com/" target="_blank">
                         <i className="fa-brands fa-github" />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="https://www.google.com/" target="_blank">
+                      <Link to="https://www.google.com/" target="_blank">
                         <i className="fa-brands fa-google" />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="https://www.facebook.com/" target="_blank">
+                      <Link to="https://www.facebook.com/" target="_blank">
                         <i className="fa-brands fa-facebook-f" />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="https://www.windows.com/" target="_blank">
+                      <Link to="https://www.windows.com/" target="_blank">
                         <i className="fa-brands fa-windows" />
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </form>

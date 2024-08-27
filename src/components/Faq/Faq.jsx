@@ -1,16 +1,15 @@
-import { useState } from "react";
 import faqImg from "../../assets/images/faq-img.jpg";
+import PropTypes from 'prop-types';
 
-const Faq = () => {
-  const [open, setOpen] = useState(false);
+const Faq = ({hideDiv}) => {
   return (
-    <div className="faq-area pb-100">
+    <div className="faq-area ptb-100">
       <div className="container">
-        <div className="section-title text-start ms-0" data-cues="slideInUp">
+        <div className={`section-title ${hideDiv ? hideDiv : " "} text-start  ms-0`} data-cues="slideInUp">
           <span className="top-title">FAQs</span>
           <h2>How to Get Quality Work With Us</h2>
         </div>
-        <div className="faq-img" data-cues="slideInUp">
+        <div className={` ${hideDiv ? hideDiv : " "} faq-img`} data-cues="slideInUp">
           <img src={faqImg} alt="faq-img" />
         </div>
         <div
@@ -26,7 +25,6 @@ const Faq = () => {
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseOne"
                 aria-expanded="true"
-                onClick={()=>setOpen(!open)}
                 aria-controls="collapseOne"
               >
                 <span className="d-sm-flex align-items-center">
@@ -47,8 +45,7 @@ const Faq = () => {
               className="accordion-collapse collapse show"
               data-bs-parent="#accordionExample"
             >
-              {
-                open && <div className="accordion-body">
+              <div className="accordion-body">
                 <p>
                   Your success is our priority. We measure our achievements by
                   the success stories of our clients. Through seamless
@@ -56,7 +53,6 @@ const Faq = () => {
                   for perfection, we strive to exceed your expectations.
                 </p>
               </div>
-              }
             </div>
           </div>
 
@@ -216,5 +212,7 @@ const Faq = () => {
     </div>
   );
 };
-
+Faq.propTypes = {
+  hideDiv : PropTypes.string,
+}
 export default Faq;
