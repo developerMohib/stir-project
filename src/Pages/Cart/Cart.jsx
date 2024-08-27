@@ -14,7 +14,7 @@ const Cart = () => {
             <div className="col-lg-8">
               <div className="d-flex justify-content-between cart-title">
                 <h3>Your Cart</h3>
-                <h3> {data.length} Items</h3>
+                <h3> {data?.length} Items</h3>
               </div>
 
               {data?.map((item, idx) => (
