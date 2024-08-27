@@ -70,6 +70,8 @@ const Navbar = () => {
                     location.pathname.includes("/team") ||
                     location.pathname.includes("/faq") ||
                     location.pathname.includes("/testimonials") ||
+                    location.pathname.includes("/sign-in") ||
+                    location.pathname.includes("/sign-up") ||
                     location.pathname.includes("/privacy-policy") ||
                     location.pathname.includes("/terms-conditions") ||
                     location.pathname.includes("/404") ||
@@ -121,8 +123,8 @@ const Navbar = () => {
                       </Link>
                     </li>
 
-                    <li className="nav-item">
-											<Link className="nav-link dropdown-toggle">
+                    <li className={`nav-item dropdown ${location.pathname === "/sign-in" || location.pathname === "/sign-up" ? "active" : ""}`}>
+											<Link className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
 												Authentication             
 											</Link>
 		

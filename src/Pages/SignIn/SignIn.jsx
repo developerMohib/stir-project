@@ -2,8 +2,10 @@ import shapeBg from "../../assets/images/banner-bg-shape.png";
 import BreadCump from "../../components/BreadCump/BreadCump";
 import signin from "../../assets/images/sign-in-img.png";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const SignIn = () => {
+  const [showPass, setShowPass] = useState(true);
   return (
     <div>
       <BreadCump bgImg={shapeBg} pageName={"Sign in"} />
@@ -39,18 +41,22 @@ const SignIn = () => {
                   <div className="form-group mb-4">
                     <div className="password-wrapper">
                       <input
-                        type="password"
+                        type={showPass ? "password" : "text"}
                         className="form-control"
                         id="password"
+                        placeholder="password"
                       />
-                      <i
+                      {showPass === true ? <i onClick={() => setShowPass(!showPass)}
                         className="fa fa-eye-slash password-toggle-icon"
                         aria-hidden="true"
-                      />
+                      /> : <i onClick={() => setShowPass(!showPass)}
+                      className="fa fa-eye password-toggle-icon"
+                      aria-hidden="true"
+                    />}
                     </div>
                   </div>
                   <div className="form-group mb-4">
-                    <Link to="sign-in.html" className="forgot">
+                    <Link to="/sign-in" className="forgot">
                       Forgot your Password?
                     </Link>
                   </div>

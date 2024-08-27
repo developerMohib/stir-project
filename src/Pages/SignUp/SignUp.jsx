@@ -1,10 +1,13 @@
 import shapeBg from "../../assets/images/banner-bg-shape.png";
-import BreadCump from '../../components/BreadCump/BreadCump';
-import signup from "../../assets/images/sign-up-img.png"
+import BreadCump from "../../components/BreadCump/BreadCump";
+import signup from "../../assets/images/sign-up-img.png";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
-    return (
-        <div>
+  const [showPass, setShowPass] = useState(true);
+  return (
+    <div>
       <BreadCump bgImg={shapeBg} pageName={"Sign in"} />
       <div className="sign-in-area ptb-100">
         <div className="container">
@@ -18,16 +21,23 @@ const SignUp = () => {
               <div className="authentication-form">
                 <ul className="ps-0 list-unstyled d-flex authentication-nav">
                   <li>
-                    <a href="sign-in.html" className="active">
+                    <Link to="/sign-in" className="active">
                       Sign In
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="sign-up.html">Sing Up</a>
+                    <Link to="/sign-up">Sing Up</Link>
                   </li>
                 </ul>
                 <h3>Log in to your account</h3>
                 <form>
+                  <div className="form-group mb-4">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Name"
+                    />
+                  </div>
                   <div className="form-group mb-4">
                     <input
                       type="email"
@@ -36,22 +46,26 @@ const SignUp = () => {
                     />
                   </div>
                   <div className="form-group mb-4">
-                    <div className="password-wrapper">
+                  <div className="password-wrapper">
                       <input
-                        type="password"
+                        type={showPass ? "password" : "text"}
                         className="form-control"
                         id="password"
+                        placeholder="password"
                       />
-                      <i
+                      {showPass === true ? <i onClick={() => setShowPass(!showPass)}
                         className="fa fa-eye-slash password-toggle-icon"
                         aria-hidden="true"
-                      />
+                      /> : <i onClick={() => setShowPass(!showPass)}
+                      className="fa fa-eye password-toggle-icon"
+                      aria-hidden="true"
+                    />}
                     </div>
                   </div>
                   <div className="form-group mb-4">
-                    <a href="sign-in.html" className="forgot">
+                    <Link to="/sign-in" className="forgot">
                       Forgot your Password?
-                    </a>
+                    </Link>
                   </div>
                   <div className="form-group mb-4">
                     <button type="submit" className="main-btn">
@@ -61,29 +75,29 @@ const SignUp = () => {
                   <p className="mb-4">Or register with an account</p>
                   <ul className="social-link ps-0 mb-0 list-unstyled">
                     <li>
-                      <a href="https://www.apple.com/" target="_blank">
+                      <Link to="https://www.apple.com/" target="_blank">
                         <i className="fa-brands fa-apple" />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="https://www.github.com/" target="_blank">
+                      <Link to="https://www.github.com/" target="_blank">
                         <i className="fa-brands fa-github" />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="https://www.google.com/" target="_blank">
+                      <Link to="https://www.google.com/" target="_blank">
                         <i className="fa-brands fa-google" />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="https://www.facebook.com/" target="_blank">
+                      <a to="https://www.facebook.com/" target="_blank">
                         <i className="fa-brands fa-facebook-f" />
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.windows.com/" target="_blank">
+                      <Link to="https://www.windows.com/" target="_blank">
                         <i className="fa-brands fa-windows" />
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </form>
@@ -93,7 +107,7 @@ const SignUp = () => {
         </div>
       </div>
     </div>
-    );
+  );
 };
 
 export default SignUp;
