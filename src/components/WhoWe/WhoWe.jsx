@@ -8,8 +8,14 @@ const WhoWe = () => {
     bars.forEach((bar) => {
       const percentage = bar.getAttribute("data-percentage");
       const progressContent = bar.querySelector(".progress-content");
+      const downArrow = bar.querySelector(".down-arrow");
+
       setTimeout(() => {
+        // Set the width of the progress content based on the percentage
         progressContent.style.width = percentage;
+
+        // Set the left position of the down arrow based on the percentage
+        downArrow.style.left = percentage;
       }, 500);
     });
   }, []);
@@ -38,7 +44,7 @@ const WhoWe = () => {
                       <span className="progress-number-wrapper">
                         <span className="progress-number-mark">
                           <span className="percent" />
-                          <span className="down-arrow"  />
+                          <span className="down-arrow" />
                         </span>
                       </span>
                     </h4>
