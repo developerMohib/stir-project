@@ -1,6 +1,8 @@
+import { useState } from "react";
 import faqImg from "../../assets/images/faq-img.jpg";
 
 const Faq = () => {
+  const [open, setOpen] = useState(false);
   return (
     <div className="faq-area pb-100">
       <div className="container">
@@ -19,11 +21,12 @@ const Faq = () => {
           <div className="accordion-item">
             <h2 className="accordion-header">
               <button
-                className="accordion-button"
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseOne"
                 aria-expanded="true"
+                onClick={()=>setOpen(!open)}
                 aria-controls="collapseOne"
               >
                 <span className="d-sm-flex align-items-center">
@@ -44,7 +47,8 @@ const Faq = () => {
               className="accordion-collapse collapse show"
               data-bs-parent="#accordionExample"
             >
-              <div className="accordion-body">
+              {
+                open && <div className="accordion-body">
                 <p>
                   Your success is our priority. We measure our achievements by
                   the success stories of our clients. Through seamless
@@ -52,8 +56,10 @@ const Faq = () => {
                   for perfection, we strive to exceed your expectations.
                 </p>
               </div>
+              }
             </div>
           </div>
+
           <div className="accordion-item">
             <h2 className="accordion-header">
               <button
@@ -91,6 +97,7 @@ const Faq = () => {
               </div>
             </div>
           </div>
+
           <div className="accordion-item">
             <h2 className="accordion-header">
               <button
@@ -128,6 +135,7 @@ const Faq = () => {
               </div>
             </div>
           </div>
+
           <div className="accordion-item">
             <h2 className="accordion-header">
               <button
@@ -165,6 +173,7 @@ const Faq = () => {
               </div>
             </div>
           </div>
+
           <div className="accordion-item">
             <h2 className="accordion-header">
               <button
