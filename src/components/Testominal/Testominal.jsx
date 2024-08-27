@@ -1,6 +1,16 @@
 import testominal3 from "../../assets/images/testimonial-3.png";
 import testominal6 from "../../assets/images/testimonial-6.jpg";
+import OwlCarousel from "react-owl-carousel";
 const Testominal = () => {
+  const options = {
+    loop: true,
+    margin: 10,
+    nav: true,
+    items: 1, // Number of items to show
+    autoplay: true,
+    autoplayTimeout: 3000, // Time in ms
+    autoplayHoverPause: true,
+  };
   return (
     <div className="testimonials-area-three overflow-hidden">
       <div className="container">
@@ -9,8 +19,9 @@ const Testominal = () => {
             <div className="section-title ms-0 text-start">
               <h2>Testimonials</h2>
             </div>
-            <div className="testimonial-slide-two owl-carousel owl-theme">
-              <div className="testimonials-single-item-two style-three">
+            
+             <OwlCarousel className="testimonial-slide owl-carousel owl-theme" {...options}>
+             <div className="testimonials-single-item-two style-three">
                 <ul className="ps-0 list-unstyled d-flex gap-2 review">
                   <li>
                     <i className="fa-solid fa-star" />
@@ -29,7 +40,7 @@ const Testominal = () => {
                   </li>
                 </ul>
                 <p>
-                  Whether it's enhancing market visibility, improving
+                  Whether its enhancing market visibility, improving
                   operational efficiency, or implementing cutting-edge
                   technologies, our agency offers a wide spectrum of services.
                   From strategic consulting &amp; digital transformation to
@@ -68,7 +79,7 @@ const Testominal = () => {
                   </li>
                 </ul>
                 <p>
-                  Whether it's enhancing market visibility, improving
+                  Whether its enhancing market visibility, improving
                   operational efficiency, or implementing cutting-edge
                   technologies, our agency offers a wide spectrum of services.
                   From strategic consulting &amp; digital transformation to
@@ -88,7 +99,7 @@ const Testominal = () => {
                   </div>
                 </div>
               </div>
-            </div>
+          </OwlCarousel>   
           </div>
           <div className="col-lg-4">
             <div className="testimonial-img-three mt-4 mt-lg-0">

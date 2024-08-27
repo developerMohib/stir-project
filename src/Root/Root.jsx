@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import "../assets/css/bootstrap.min.css";
 import "../assets/css/font-awesome-pro.css";
 import "../assets/css/icofont.min.css";
@@ -10,10 +10,12 @@ import TopBar from "../components/TopBar/TopBar";
 import Preloader from "../components/Preloader/Preloader";
 
 const Root = () => {
+  const location = useLocation();
   return (
     <div>
       <Preloader />
-      <TopBar />
+     {/* Render TopBar only on the Creative Agency page */}
+     {location.pathname === '/' && <TopBar />}
       <Navbar />
       <Outlet />
       <Footer />

@@ -14,7 +14,7 @@ const AboutUs = () => {
     <div>
       <BreadCump bgImg={shapeTwo} pageName={"About Us"} />
       <Aboutus />
-      <Services data={limitedData} />
+      <Services data={limitedData} bgColor={"#fff"} />
       <Testominal />
       <Contact />
     </div>

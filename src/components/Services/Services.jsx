@@ -3,11 +3,11 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-const Services = ({ data = [] }) => {
+const Services = ({ data = []}) => {
   return (
     <div>
       {/*=== Start Services Area ===*/}
-      <div className="services-area bg-color-030303 ptb-100">
+      <div className={`services-area bg-color-030303 ptb-100`}>
         <div className="container">
           <div className="section-title white-title" data-cues="slideInUp">
             <span className="top-title">Our Services</span>
