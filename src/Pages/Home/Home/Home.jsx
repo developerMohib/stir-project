@@ -18,7 +18,7 @@ const Home = () => {
       <HeroBanner />
       <WorkBrand />
       <Services data={limitedData} />
-      <WhoWe />
+      <WhoWe />      
       <Testominal />
       <CaseStudy />
       <Faq />

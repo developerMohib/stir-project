@@ -1,6 +1,7 @@
 import testominal3 from "../../assets/images/testimonial-3.png";
 import testominal6 from "../../assets/images/testimonial-6.jpg";
 import OwlCarousel from "react-owl-carousel";
+
 const Testominal = () => {
   const options = {
     loop: true,
@@ -19,9 +20,12 @@ const Testominal = () => {
             <div className="section-title ms-0 text-start">
               <h2>Testimonials</h2>
             </div>
-            
-             <OwlCarousel className="testimonial-slide owl-carousel owl-theme" {...options}>
-             <div className="testimonials-single-item-two style-three">
+
+            <OwlCarousel
+              className="testimonial-slide owl-carousel owl-theme"
+              {...options}
+            >
+              <div className="testimonials-single-item-two style-three">
                 <ul className="ps-0 list-unstyled d-flex gap-2 review">
                   <li>
                     <i className="fa-solid fa-star" />
@@ -40,11 +44,11 @@ const Testominal = () => {
                   </li>
                 </ul>
                 <p>
-                  Whether its enhancing market visibility, improving
-                  operational efficiency, or implementing cutting-edge
-                  technologies, our agency offers a wide spectrum of services.
-                  From strategic consulting &amp; digital transformation to
-                  marketing strategies &amp; financial advisory...
+                  Whether its enhancing market visibility, improving operational
+                  efficiency, or implementing cutting-edge technologies, our
+                  agency offers a wide spectrum of services. From strategic
+                  consulting &amp; digital transformation to marketing
+                  strategies &amp; financial advisory...
                 </p>
                 <div className="d-flex align-items-center info">
                   <div className="flex-shrink-0">
@@ -79,11 +83,11 @@ const Testominal = () => {
                   </li>
                 </ul>
                 <p>
-                  Whether its enhancing market visibility, improving
-                  operational efficiency, or implementing cutting-edge
-                  technologies, our agency offers a wide spectrum of services.
-                  From strategic consulting &amp; digital transformation to
-                  marketing strategies &amp; financial advisory...
+                  Whether its enhancing market visibility, improving operational
+                  efficiency, or implementing cutting-edge technologies, our
+                  agency offers a wide spectrum of services. From strategic
+                  consulting &amp; digital transformation to marketing
+                  strategies &amp; financial advisory...
                 </p>
                 <div className="d-flex align-items-center info">
                   <div className="flex-shrink-0">
@@ -99,7 +103,7 @@ const Testominal = () => {
                   </div>
                 </div>
               </div>
-          </OwlCarousel>   
+            </OwlCarousel>
           </div>
           <div className="col-lg-4">
             <div className="testimonial-img-three mt-4 mt-lg-0">

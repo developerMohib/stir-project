@@ -3,6 +3,7 @@ import Contact from "../../components/Contact/Contact";
 import Testominal from "../../components/Testominal/Testominal";
 import shapeBg from "../../assets/images/banner-bg-shape.png";
 import useDataFetch from "../../components/Hooks/useDataFetch";
+import Pagination from "../../components/Pagination/Pagination";
 
 const Blog = () => {
   const { data } = useDataFetch({ url: "/blog.json" });
@@ -32,42 +33,14 @@ const Blog = () => {
               </div>
             ))}
 
-            <div className="col-md-12">
-              <div className="pagination">
-                <a href="blog.html" className="next page-count hover-style">
-                  <div className="inner-border">
-                    <i className="icofont-simple-left" />
-                  </div>
-                </a>
-                <a
-                  href="blog.html"
-                  className="page-count current hover-style"
-                  aria-current="page"
-                >
-                  <div className="inner-border">1</div>
-                </a>
-                <a href="blog.html" className="page-count hover-style">
-                  <div className="inner-border">2</div>
-                </a>
-                <a href="blog.html" className="page-count hover-style">
-                  <div className="inner-border">3</div>
-                </a>
-                <a href="blog.html" className="page-count hover-style">
-                  <div className="inner-border">4</div>
-                </a>
-                <a href="blog.html" className="next page-count hover-style">
-                  <div className="inner-border">
-                    <i className="icofont-simple-right" />
-                  </div>
-                </a>
-              </div>
-            </div>
+            <Pagination />
+
           </div>
         </div>
       </div>
 
       <Testominal />
-      <Contact />
+      <Contact bgColor={" "} />
     </div>
   );
 };

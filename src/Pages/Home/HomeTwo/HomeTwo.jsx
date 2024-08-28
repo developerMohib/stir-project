@@ -11,7 +11,7 @@ import UpdateBlog from "./UpdateBlog/UpdateBlog";
 
 const HomeTwo = () => {
     return (
-        <div>
+        <div className="business-agency-body">
             <Banner />
             <KnowUs />
             <Services />

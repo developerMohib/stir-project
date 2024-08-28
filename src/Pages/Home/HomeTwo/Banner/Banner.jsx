@@ -1,10 +1,11 @@
 import targetsvg from "../../../../assets/images/target.svg";
 import shape2 from "../../../../assets/images/shape-2.png";
 import bannerShape from "../../../../assets/images/banner-img-shape.png";
+import bannerImg from "../../../../assets/images/banner-img.png";
 
 const Banner = () => {
   return (
-    <div className="banner-area-two ">
+    <div className="banner-area-two">
       <div className="container mw-1680">
         <div className="row align-items-center">
           <div className="col-lg-7">
@@ -14,7 +15,11 @@ const Banner = () => {
               data-group="images"
             >
               <div className="target">
-                <img src={targetsvg} className="target-icon" alt="target" />
+                <img
+                  src={targetsvg}
+                  className="target-icon"
+                  alt="target"
+                />
                 <span>More Than A Business Agency.</span>
               </div>
               <h2>Delivering Unique Solutions for Success</h2>
@@ -38,12 +43,16 @@ const Banner = () => {
                   </div>
                 </a>
               </div>
-              <img src={shape2} className="shape shape-2" alt="shape" />
+              <img
+                src={shape2}
+                className="shape shape-2"
+                alt="shape"
+              />
             </div>
           </div>
           <div className="col-lg-5" data-cues="slideInUp">
             <div className="banner-img">
-              <img src={bannerShape} alt="banner-img" />
+              <img src={bannerImg} alt="banner-img" />
               <img
                 src={bannerShape}
                 className="banner-img-shape"

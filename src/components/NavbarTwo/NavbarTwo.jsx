@@ -1,14 +1,12 @@
-import { useEffect, useState } from "react";
-import white_logo from "../../assets/images/white-logo.svg";
 import { Link, useLocation } from "react-router-dom";
-
-const Navbar = () => {
+import white_logo from "../../assets/images/white-logo.svg";
+import { useEffect, useState } from "react";
+const NavbarTwo = () => {
   const [isSticky, setIsSticky] = useState(false);
-
   const location = useLocation();
+
   useEffect(() => {
     const handleScroll = () => {
-      
       if (window.scrollY > 150) {
         setIsSticky(true);
       } else {
@@ -25,14 +23,18 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`navbar-area bg-black ${isSticky ? "is-sticky" : ""}`}>
+    <div
+      className={`navbar-area style-two bg-color-0c0c1c ${
+        isSticky ? "is-sticky" : ""
+      } py-0`}
+    >
       {/*=== Start Main Navbar Section ===*/}
       <div className="main-nav">
         <div className="container mw-1680">
-          <nav className="navbar navbar-expand-md navbar-light">
-            <Link className="navbar-brand" to="/">
+          <nav className="navbar navbar-expand-md">
+            <a className="navbar-brand" href="index.html">
               <img src={white_logo} alt="logo" />
-            </Link>
+            </a>
             <div
               className="collapse navbar-collapse for-mobile-menu"
               id="navbarSupportedContent"
@@ -48,6 +50,7 @@ const Navbar = () => {
                   }`}
                 >
                   <Link className="nav-link dropdown-toggle">Home</Link>
+
                   <ul className="dropdown-menu">
                     <li className="nav-item">
                       <Link to="/" className="nav-link">
@@ -55,7 +58,7 @@ const Navbar = () => {
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to="/home-2" className="nav-link">
+                      <Link to="/home-2" className="nav-link active">
                         Business Agency
                       </Link>
                     </li>
@@ -124,27 +127,43 @@ const Navbar = () => {
                         Testimonials
                       </Link>
                     </li>
-
-                    <li className={`nav-item dropdown ${location.pathname === "/sign-in" || location.pathname === "/sign-up" ? "active" : ""}`}>
-											<Link className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-												Authentication             
-											</Link>
-		
-											<ul className="dropdown-menu">
-												<li className="nav-item">
-                        <Link to="/sign-in" className={`nav-link ${
-                          location.pathname === "/sign-in" ? "active" : ""
-                        }`}>Sign In</Link>
-												</li>
-												<li className="nav-item">
-													<Link to="/sign-up" className={`nav-link ${
-                          location.pathname === "/sign-up" ? "active" : ""
-                        }`}>Sign Up</Link>
-												</li>
-											</ul>
-										</li>
-
-
+                    <li
+                      className={`nav-item dropdown ${
+                        location.pathname === "/sign-in" ||
+                        location.pathname === "/sign-up"
+                          ? "active"
+                          : ""
+                      }`}
+                    >
+                      <Link
+                        className="nav-link dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                      >
+                        Authentication
+                      </Link>
+                      <ul className="dropdown-menu">
+                        <li className="nav-item">
+                          <Link
+                            to="/sign-in"
+                            className={`nav-link ${
+                              location.pathname === "/sign-in" ? "active" : ""
+                            }`}
+                          >
+                            Sign In
+                          </Link>
+                        </li>
+                        <li className="nav-item">
+                          <Link
+                            to="/sign-up"
+                            className={`nav-link ${
+                              location.pathname === "/sign-up" ? "active" : ""
+                            }`}
+                          >
+                            Sign Up
+                          </Link>
+                        </li>
+                      </ul>
+                    </li>
                     <li className="nav-item">
                       <Link
                         to="/privacy-policy"
@@ -282,7 +301,8 @@ const Navbar = () => {
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to="/cart"
+                      <Link
+                        to="/cart"
                         className={`nav-link ${
                           location.pathname === "/cart" ? "active" : ""
                         }`}
@@ -360,40 +380,31 @@ const Navbar = () => {
                   </select>
                   <i className="fa-light fa-globe" />
                 </div>
-                <ul className="social-link ps-0 mb-0 list-unstyled">
-                  <li>
-                    <Link to="https://facebook.com/" target="_blank">
-                      <i className="fa-brands fa-facebook" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="https://twitter.com/" target="_blank">
-                      <i className="fa-brands fa-twitter" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="https://linkedin.com/"
-                      target="_blank"
-                      
-                    >
-                      <i className="fa-brands fa-instagram"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="https://linkedin.com/" target="_blank">
-                      <i className="fa-brands fa-linkedin" />
-                    </Link>
-                  </li>
-                </ul>
+                <Link to="/blog" className="main-btn d-none d-lg-block">
+                  <span>Get In Touch</span>
+                  <i className="fa-regular fa-arrow-right" />
+                </Link>
               </div>
             </div>
           </nav>
         </div>
       </div>
       {/*=== End Main Navbar Section ===*/}
+      {/*=== Start Mobile Navbar Section ===*/}
+      <div className="mobile-nav">
+        <div className="container">
+          <div className="mobile-menu">
+            <div className="logo">
+              <a href="index.html">
+                <img src={white_logo} alt="logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/*=== End Mobile Navbar Section ===*/}
     </div>
   );
 };
 
-export default Navbar;
+export default NavbarTwo;

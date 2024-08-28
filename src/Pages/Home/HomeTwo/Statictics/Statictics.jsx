@@ -1,3 +1,4 @@
+import shape3 from "../../../../assets/images/shape-3.png";
 const Statictics = () => {
   return (
     <div className="counter-area pb-100 position-relative z-1">
@@ -27,7 +28,7 @@ const Statictics = () => {
         </div>
       </div>
       <img
-        src="assets/images/shape-3.png"
+        src={shape3}
         className="shape shape-3"
         alt="shape"
       />
