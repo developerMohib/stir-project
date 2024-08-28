@@ -75,6 +75,10 @@ export const router = createBrowserRouter([
         element: <FaqPage />,
       },
       {
+        path: "/404",
+        element: <ErrorPage />,
+      },
+      {
         path: "/team",
         element: <Team />,
       },

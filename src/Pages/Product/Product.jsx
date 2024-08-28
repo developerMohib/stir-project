@@ -1,6 +1,7 @@
 import useDataFetch from "../../components/Hooks/useDataFetch";
 import shapeBg from "../../assets/images/banner-bg-shape.png";
 import BreadCump from "../../components/BreadCump/BreadCump";
+import Pagination from "../../components/Pagination/Pagination";
 
 const Product = () => {
   const { data } = useDataFetch({ url: "/product.json" });
@@ -114,35 +115,7 @@ const Product = () => {
               </div>
             ))}
           </div>
-
-          <div className="col-md-12">
-  <div className="pagination">
-    <a href="products.html" className="next page-count hover-style">
-      <div className="inner-border">
-        <i className="icofont-simple-left" />
-      </div>
-    </a>
-    <a href="products.html" className="page-count current hover-style" aria-current="page">
-      <div className="inner-border">1</div>
-    </a>
-    <a href="products.html" className="page-count hover-style">
-      <div className="inner-border">2</div>
-    </a>
-    <a href="products.html" className="page-count hover-style">
-      <div className="inner-border">3</div>
-    </a>
-    <a href="products.html" className="page-count hover-style">
-      <div className="inner-border">4</div>
-    </a>
-    <a href="products.html" className="next page-count hover-style">
-      <div className="inner-border">
-        <i className="icofont-simple-right" />
-      </div>
-    </a>
-  </div>
-</div>
-
-
+          <Pagination />
         </div>
       </div>
     </div>

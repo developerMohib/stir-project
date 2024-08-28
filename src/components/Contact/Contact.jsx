@@ -1,15 +1,15 @@
-
-const Contact = () => {
+import PropTypes from 'prop-types';
+const Contact = ({bgColor}) => {
   return (
     <div>
       {/*=== Start Contact Us Area ===*/}
-      <div className="contact-us-area bg-color-030303 ptb-100">
+      <div className={`contact-us-area ${bgColor ? bgColor : "bg-color-030303"} ptb-100`}>
         <div className="container">
-          <div className="section-title white-title" data-cues="slideInUp">
+          <div className={`section-title ${bgColor ? bgColor : "white-title"} `} data-cues="slideInUp">
             <span className="top-title">Appointment</span>
             <h2>Love to Hear from You Get in Touch!</h2>
           </div>
-          <form className="appointment-form">
+          <form className={`appointment-form ${bgColor ? "style-two" : bgColor}`}>
             <div className="row" data-cues="slideInUp">
               <div className="col-lg-6">
                 <div className="form-group">
@@ -77,5 +77,7 @@ const Contact = () => {
     </div>
   );
 };
-
+Contact.propTypes = {
+  bgColor : PropTypes.string ,
+}
 export default Contact;

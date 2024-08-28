@@ -1,15 +1,16 @@
 import shapeBg from "../../assets/images/banner-bg-shape.png";
 import BreadCump from "../../components/BreadCump/BreadCump";
+import Contact from "../../components/Contact/Contact";
 import useDataFetch from "../../components/Hooks/useDataFetch";
-
+import Pagination from "../../components/Pagination/Pagination"
+import Testominal from "../../components/Testominal/Testominal";
 const CaseStudy = () => {
   const { data } = useDataFetch({ url: "/caseStudy.json" });
 
   return (
     <div>
       <BreadCump bgImg={shapeBg} pageName={"Case Study"} />
-      <div>
-        <div className="container">
+        <div className="container ptb-100">
           <div className="row">
             {data?.map((bcase, idx) => (
               <div key={idx} className="col-lg-4 col-md-6">
@@ -28,8 +29,10 @@ const CaseStudy = () => {
               </div>
             ))}
           </div>
+          <Pagination />
+          <Testominal />
+          <Contact bgColor={" "} />
         </div>
-      </div>
     </div>
   );
 };

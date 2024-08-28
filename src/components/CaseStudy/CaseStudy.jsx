@@ -1,10 +1,8 @@
-
 import casestudy1 from "../../assets/images/case-study-1.jpg";
 import casestudy2 from "../../assets/images/case-study-2.jpg";
 import casestudy3 from "../../assets/images/case-study-3.jpg";
 import casestudy4 from "../../assets/images/case-study-4.jpg";
 import casestudy5 from "../../assets/images/case-study-5.jpg";
-
 const CaseStudy = () => {
   return (
     <div>

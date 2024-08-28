@@ -1,22 +1,20 @@
 import shapeBg from "../../assets/images/banner-bg-shape.png";
-import BreadCump from '../../components/BreadCump/BreadCump';
+import BreadCump from "../../components/BreadCump/BreadCump";
+import Contact from "../../components/Contact/Contact";
 import useDataFetch from "../../components/Hooks/useDataFetch";
+import Testominal from "../../components/Testominal/Testominal";
 
 const Services = () => {
-    const {data} = useDataFetch({ url: "/servicesOne.json"})
-    return (
-        <div>
-            <BreadCump bgImg={shapeBg} pageName={"Services"} />
-            <div className="services-area bg-color-030303 ptb-100">
-        <div className="container">
-          <div className="section-title white-title" data-cues="slideInUp">
-            <span className="top-title">Our Services</span>
-            <h2>Professional &amp; Creative Agency Solutions</h2>
-          </div>
+  const { data } = useDataFetch({ url: "/servicesOne.json" });
+  return (
+    <div>
+      <BreadCump bgImg={shapeBg} pageName={"Services"} />
+      <div className="services-area pt-100 pb-75">
+        <div className="container">          
           <div className="row justify-content-center" data-cues="slideInUp">
             {data?.map((service, idx) => (
               <div key={idx} className="col-xl-3 col-sm-6">
-                <div className="services-single-item">
+                <div className="services-single-item style-two style-three">
                   <div className="icon">
                     <img
                       src={service.iconImg}
@@ -36,10 +34,12 @@ const Services = () => {
               </div>
             ))}
           </div>
+          <Testominal />
+          <Contact bgColor={" "} />
         </div>
       </div>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default Services;
