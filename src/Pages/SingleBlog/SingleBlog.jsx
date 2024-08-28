@@ -1,14 +1,15 @@
 import BreadCump from "../../components/BreadCump/BreadCump";
 import shapeBg from "../../assets/images/banner-bg-shape.png";
 import blogdetails from "../../assets/images/blog-details-img.jpg";
-import quoteSvg from "../../assets/images/quote.svg"
-import blogimg12 from "../../assets/images/blog-12.jpg"
-import blogimg13 from "../../assets/images/blog-13.jpg"
+import quoteSvg from "../../assets/images/quote.svg";
+import blogimg12 from "../../assets/images/blog-12.jpg";
+import blogimg13 from "../../assets/images/blog-13.jpg";
 
 const SingleBlog = () => {
   return (
     <div>
       <BreadCump bgImg={shapeBg} pageName={"Blog Details"} />
+      {/* Start Blog Details Area */}
 
       <div className="blog-details-area pt-100">
         <div className="container">
@@ -17,7 +18,7 @@ const SingleBlog = () => {
               <img src={blogdetails} alt="blog-details-img" />
             </div>
             <h2>
-              A Day in Fashion's Hidden Realms, A Behind-the-Scenes Look at
+              A Day in Fashion s Hidden Realms, A Behind-the-Scenes Look at
               Creative Processes
             </h2>
             <p>
@@ -27,13 +28,13 @@ const SingleBlog = () => {
               the runway. Unveiling the heart of fashion – step inside design
               studios to witness the artistic process. From concept sketches to
               material selection, discover how ideas evolve into stunning
-              garments. Get an insider's view of model casting sessions and
+              garments. Get an insider s view of model casting sessions and
               fittings. Learn how designers collaborate with models to bring
               their creations to life, ensuring a perfect match between the
               garment and the wearer. Dive into the transformative world of
               fashion styling and makeup. Explore the creativity and precision
-              required to enhance a model's appearance, aligning with the
-              designer's vision.
+              required to enhance a model s appearance, aligning with the
+              designer s vision.
             </p>
             <p>
               Follow our journey to an actual fashion photoshoot. From scouting
@@ -142,6 +143,59 @@ const SingleBlog = () => {
           </div>
         </div>
       </div>
+      {/* End Blog Details Area */}
+
+      {/*=== Start Post A Comment Area ===*/}
+      <div className="post-a-comment-area pb-100">
+        <div className="container">
+          <div className="section-title text-start ms-0">
+            <h2>Post A Comment</h2>
+          </div>
+          <form className="post-a-comment">
+            <div className="row">
+              <div className="col-lg-6">
+                <div className="form-group">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Your Name *"
+                  />
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="form-group">
+                  <input
+                    type="email"
+                    className="form-control"
+                    placeholder="Your Email *"
+                  />
+                </div>
+              </div>
+              <div className="col-lg-12">
+                <div className="form-group">
+                  <textarea
+                    cols={30}
+                    rows={6}
+                    className="form-control"
+                    placeholder="Message *"
+                    defaultValue={""}
+                  />
+                </div>
+              </div>
+              <div className="col-lg-12">
+                <button
+                  type="submit"
+                  className="circle-btn d-inline-block text-decoration-none bg-transparent d-flex align-items-center"
+                >
+                  <span>Send Message</span>
+                  <i className="fa-solid fa-arrow-up-right" />
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      {/*=== End Post A Comment Area ===*/}
     </div>
   );
 };

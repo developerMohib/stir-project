@@ -14,8 +14,8 @@ const HomeThree = () => {
       <Services />
       <Aboutus />
       <BlogMarque />
-      <Team />
       <EmpowerVdo />
+      <Team />
       <Testominal />
       <News />
     </div>

@@ -1,6 +1,7 @@
 import mapsvg from "../../../../assets/images/map.svg";
 import banner3 from "../../../../assets/images/banner-img-three.jpg";
 import shape4 from "../../../../assets/images/shape-4.png";
+import { Link } from "react-router-dom";
 const Banner = () => {
   return (
     <div className="banner-area-three position-relative">
@@ -28,19 +29,19 @@ const Banner = () => {
               </div>
             </div>
           </div>
-          <a href="services.html" className="banner-btn">
+          <Link to="/services" className="banner-btn">
             <span>
               Explore Our Services
               <i className="fa-solid fa-arrow-up-right" />
             </span>
-          </a>
+          </Link>
         </div>
       </div>
       <img src={banner3} className="banner-img-three" alt="banner-img" />
       <img src={shape4} className="shape shape-4" alt="shape" />
       <a href="#about-us" className="scroll-btn">
-        <i className="fa-sharp fa-light fa-arrow-down" />
-      </a>
+              <i className="fa-sharp fa-light fa-arrow-down icon"></i>
+            </a>
     </div>
   );
 };
