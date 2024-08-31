@@ -49,6 +49,51 @@ const Product = () => {
                     Monitor
                   </button>
                 </div>
+                <ul className="ps-0 mb-0 list-unstyled d-flex align-items-center flex-wrap gap-3 product-tag-list">
+                  <li>
+                    <span>Your filter</span>
+                  </li>
+                  <li>
+                    <a href="products.html" className="tag">
+                      Electric
+                      <i className="fa-regular fa-xmark" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="products.html" className="tag">
+                      Brand New
+                      <i className="fa-regular fa-xmark" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="products.html" className="clear">
+                      Clear All
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="col-lg-6 col-md-6">
+                <ul className="ps-0 mb-0 list-unstyled d-flex justify-content-md-end align-items-center flex-wrap gap-3 mt-4 mt-md-0">
+                  <li>
+                    <button className="filter-btn bg-transparent fw-bold">
+                      Filter +
+                    </button>
+                  </li>
+                  <li>
+                    <span>Showing 12 of 48 products</span>
+                  </li>
+                  <li>
+                    <select
+                      className="form-select border-0 default-sorting"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Default Sorting</option>
+                      <option value={1}>Smart Phone</option>
+                      <option value={2}>Computer</option>
+                      <option value={3}>Laptop</option>
+                    </select>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
