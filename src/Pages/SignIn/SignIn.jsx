@@ -1,8 +1,8 @@
 import shapeBg from "../../assets/images/banner-bg-shape.png";
 import BreadCump from "../../components/BreadCump/BreadCump";
 import signin from "../../assets/images/sign-in-img.png";
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import { Link} from "react-router-dom";
+import { useState } from "react"
 
 const SignIn = () => {
   const [showPass, setShowPass] = useState(true);
@@ -26,7 +26,7 @@ const SignIn = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/sign-up">Sing Up</Link>
+                    <Link to="/sign-up">Sign Up</Link>
                   </li>
                 </ul>
                 <h3>Log in to your account</h3>
@@ -46,13 +46,19 @@ const SignIn = () => {
                         id="password"
                         placeholder="password"
                       />
-                      {showPass === true ? <i onClick={() => setShowPass(!showPass)}
-                        className="fa fa-eye-slash password-toggle-icon"
-                        aria-hidden="true"
-                      /> : <i onClick={() => setShowPass(!showPass)}
-                      className="fa fa-eye password-toggle-icon"
-                      aria-hidden="true"
-                    />}
+                      {showPass === true ? (
+                        <i
+                          onClick={() => setShowPass(!showPass)}
+                          className="fa fa-eye-slash password-toggle-icon"
+                          aria-hidden="true"
+                        />
+                      ) : (
+                        <i
+                          onClick={() => setShowPass(!showPass)}
+                          className="fa fa-eye password-toggle-icon"
+                          aria-hidden="true"
+                        />
+                      )}
                     </div>
                   </div>
                   <div className="form-group mb-4">

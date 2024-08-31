@@ -3,20 +3,20 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-const Services = ({ data = []}) => {
+const Services = ({ data = [], }) => {
   return (
     <div>
       {/*=== Start Services Area ===*/}
       <div className={`services-area bg-color-030303 ptb-100`}>
         <div className="container">
-          <div className="section-title white-title" data-cues="slideInUp">
+          <div className={`section-title white-title`} data-cues="slideInUp">
             <span className="top-title">Our Services</span>
             <h2>Professional &amp; Creative Agency Solutions</h2>
           </div>
           <div className="row justify-content-center" data-cues="slideInUp">
             {data?.map((service, idx) => (
               <div key={idx} className="col-xl-3 col-sm-6">
-                <div className="services-single-item">
+                <div className={`services-single-item`}>
                   <div className="icon">
                     <img
                       src={service.iconImg}

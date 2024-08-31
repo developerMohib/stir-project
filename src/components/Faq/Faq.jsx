@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 
 const Faq = ({hideDiv}) => {
   return (
-    <div className="faq-area pb-100">
+    <div className={`faq-area ${hideDiv ? "ptb-100" : "pb-100"}`}>
   <div className="container">
     <div className="section-title text-start ms-0" data-cues="slideInUp">
       <span className="top-title">FAQs</span>
       <h2>How to Get Quality Work With Us</h2>
     </div>
-    <div className="faq-img" data-cues="slideInUp">
+    <div className={` ${hideDiv ? hideDiv : "faq-img"} `} data-cues="slideInUp">
       <img src={faqImg} alt="faq-img" />
     </div>
     <div className="accordion accordion-content" id="accordionExample" data-cues="slideInUp">

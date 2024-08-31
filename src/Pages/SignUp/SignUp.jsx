@@ -2,7 +2,7 @@ import shapeBg from "../../assets/images/banner-bg-shape.png";
 import BreadCump from "../../components/BreadCump/BreadCump";
 import signup from "../../assets/images/sign-up-img.png";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 const SignUp = () => {
   const [showPass, setShowPass] = useState(true);
@@ -21,12 +21,12 @@ const SignUp = () => {
               <div className="authentication-form">
                 <ul className="ps-0 list-unstyled d-flex authentication-nav">
                   <li>
-                    <Link to="/sign-in" className="active">
+                    <Link to="/sign-in">
                       Sign In
                     </Link>
                   </li>
                   <li>
-                    <Link to="/sign-up">Sing Up</Link>
+                    <Link to="/sign-up" className="active" >Sign Up</Link>
                   </li>
                 </ul>
                 <h3>Log in to your account</h3>
