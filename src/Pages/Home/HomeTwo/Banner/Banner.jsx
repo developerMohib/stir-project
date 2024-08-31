@@ -1,7 +1,12 @@
 import targetsvg from "../../../../assets/images/target.svg";
 import shape2 from "../../../../assets/images/shape-2.png";
 import bannerShape from "../../../../assets/images/banner-img-shape.png";
+<<<<<<< HEAD
 import bannerImg from "../../../../assets/images/banner-img.png";
+=======
+import bannerImg from "../../../../assets/images/banner-img.png"
+import { Link } from "react-router-dom";
+>>>>>>> 3b32297c3641807e0afcd7101670bafd8cbb4a0f
 
 const Banner = () => {
   return (
@@ -29,19 +34,18 @@ const Banner = () => {
                 Business agencies are specialized entities...
               </p>
               <div className="d-flex align-items-center">
-                <a href="blog.html" className="main-btn style-two">
-                  <span>Learn More</span>
-                  <i className="fa-regular fa-arrow-right" />
-                </a>
-                <a
-                  href="about-us.html"
+                <Link to="/blog" className="main-btn style-two" ><span>Learn More</span>
+                <i className="fa-regular fa-arrow-right" /> </Link>
+
+                <Link
+                to="/about-us"
                   className="circle-btn-two position-relative"
                 >
                   <div className="btn-info">
                     <span>About Us</span>
                     <i className="fa-solid fa-arrow-up-right" />
                   </div>
-                </a>
+                </Link>
               </div>
               <img
                 src={shape2}
