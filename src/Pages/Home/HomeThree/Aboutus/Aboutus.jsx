@@ -1,7 +1,42 @@
 
+import { useEffect } from "react";
 import weare2 from "../../../../assets/images/who-we-are-img-2.jpg";
 
 const Aboutus = () => {
+  useEffect(() => {
+    const skillBars = document.querySelectorAll('.skill-bar');
+
+    skillBars.forEach((skillBar) => {
+      const progressContent = skillBar.querySelector('.progress-content');
+      const progressNumberMark = skillBar.querySelector('.progress-number-mark');
+      const dataPercentage = skillBar.getAttribute('data-percentage');
+
+      // Set initial styles for smooth transitions
+      progressContent.style.transition = 'width 2s ease';
+      progressNumberMark.style.position = 'relative';
+
+      // Animate progress bar width
+      progressContent.style.width = dataPercentage;
+
+      let start = null;
+
+      // Animate progress number mark
+      function animateProgressNumberMark(timestamp) {
+        if (!start) start = timestamp;
+        let progress = timestamp - start;
+        let percentage = Math.min((progress / 2000) * parseFloat(dataPercentage), parseFloat(dataPercentage));
+        progressNumberMark.style.left = percentage + '%';
+        progressNumberMark.querySelector('.percent').innerHTML = Math.round(percentage) + '%';
+
+        if (progress < 2000) {
+          requestAnimationFrame(animateProgressNumberMark);
+        }
+      }
+
+      requestAnimationFrame(animateProgressNumberMark);
+    });
+  }, []);
+
   return (
     <div id="about-us" className="who-we-are-area pt-75 pb-100 bg-color-f6f5f3">
       <div className="container">

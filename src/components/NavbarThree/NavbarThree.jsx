@@ -3,9 +3,11 @@ import { Link, useLocation } from "react-router-dom";
 import blackLogo from "../../assets/images/black-logo.svg";
 const NavbarThree = () => {
   const [isSticky, setIsSticky] = useState(false);
+
   const location = useLocation();
   useEffect(() => {
     const handleScroll = () => {
+      console.log("ScrollY:", window.scrollY); // Debugging line
       if (window.scrollY > 150) {
         setIsSticky(true);
       } else {
@@ -20,9 +22,10 @@ const NavbarThree = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
-    <div>
-      <div className={`navbar-area style-three ${isSticky ? "is-sticky" : ""}`}>
+    <div className={`navbar-area style-three ${isSticky ? "is-sticky" : ""}`}>
+      <div>
         {/*=== Start Main Navbar Section ===*/}
         <div className="main-nav">
           <div className="container mw-1680">
@@ -366,38 +369,49 @@ const NavbarThree = () => {
                     </ul>
                   </li>
                 </ul>
-                
-                <div className="nav-right-options d-flex align-items-center">
-								<ul className="social-link ps-0 mb-0 list-unstyled">
-									<li>
-										<a href="https://facebook.com/" target="_blank">
-											<i className="fa-brands fa-facebook-f"></i>
-										</a>
-									</li>
-									<li>
-										<a href="https://twitter.com/" target="_blank">
-											<i className="fa-brands fa-twitter"></i>
-										</a>
-									</li>
-									<li>
-										<a href="https://instagram.com/" target="_blank">
-											<i className="fa-brands fa-instagram"></i>
-										</a>
-									</li>
-									<li>
-										<a href="https://linkedin.com/" target="_blank">
-											<i className="fa-brands fa-linkedin-in"></i>
-										</a>
-									</li>
-								</ul>
-								<button className="src-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
-									<i className="fa-sharp fa-regular fa-magnifying-glass"></i>
-								</button>
-								<button className="menu-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-									<i className="fa-regular fa-bars"></i>
-								</button>
-							</div>
 
+                <div className="nav-right-options d-flex align-items-center">
+                  <ul className="social-link ps-0 mb-0 list-unstyled">
+                    <li>
+                      <a href="https://facebook.com/" target="_blank">
+                        <i className="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/" target="_blank">
+                        <i className="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://instagram.com/" target="_blank">
+                        <i className="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://linkedin.com/" target="_blank">
+                        <i className="fa-brands fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <button
+                    className="src-btn"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasTop"
+                    aria-controls="offcanvasTop"
+                  >
+                    <i className="fa-sharp fa-regular fa-magnifying-glass"></i>
+                  </button>
+                  <button
+                    className="menu-btn"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"
+                  >
+                    <i className="fa-regular fa-bars"></i>
+                  </button>
+                </div>
               </div>
             </nav>
           </div>

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import useDataFetch from "../../../../components/Hooks/useDataFetch";
 import case1 from "../../../../assets/images/cases-1.jpg"
 import case2 from "../../../../assets/images/cases-2.jpg"
@@ -15,6 +14,16 @@ const RecentCase = () => {
       <span className="top-title style-two">Some Of Our Recent Cases</span>
       <h2>Unveiling Our Most Impactful Solutions for You</h2>
     </div>
+    <div className="recent-cases-single-item">
+        <a href="case-study.html" className="tag">Marketing</a>
+        <h3>
+          <a href="case-study.html">Business Development and Partnerships</a>
+        </h3>
+        <a href="case-study.html" className="cases-img">
+          <img src={case1} alt="cases" />
+        </a>
+        <p>Our expert consultants offer tailored devices aligned with your craft objective. From market analysis strategies...</p>
+      </div>
     <div className="cases-slide owl-carousel owl-theme">
       <div className="recent-cases-single-item">
         <a href="case-study.html" className="tag">Marketing</a>
