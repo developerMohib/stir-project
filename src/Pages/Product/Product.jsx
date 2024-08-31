@@ -2,9 +2,28 @@ import useDataFetch from "../../components/Hooks/useDataFetch";
 import shapeBg from "../../assets/images/banner-bg-shape.png";
 import BreadCump from "../../components/BreadCump/BreadCump";
 import Pagination from "../../components/Pagination/Pagination";
+import { useEffect, useRef } from "react";
+import mixitup from "mixitup";
 
 const Product = () => {
   const { data } = useDataFetch({ url: "/product.json" });
+  const containerRef = useRef(null);
+
+  // Initialize MixItUp
+  useEffect(() => {
+    if (containerRef.current && data?.length > 0) {
+      mixitup(containerRef.current, {
+        selectors: {
+          target: ".mix",
+        },
+        animation: {
+          effects: "fade scale",
+          duration: 500,
+        },
+      });
+    }
+  }, [data]);
+
   return (
     <div>
       <BreadCump bgImg={shapeBg} pageName={"Product"} />
@@ -30,58 +49,16 @@ const Product = () => {
                     Monitor
                   </button>
                 </div>
-                <ul className="ps-0 mb-0 list-unstyled d-flex align-items-center flex-wrap gap-3 product-tag-list">
-                  <li>
-                    <span>Your filter</span>
-                  </li>
-                  <li>
-                    <a href="products.html" className="tag">
-                      Electric
-                      <i className="fa-regular fa-xmark" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="products.html" className="tag">
-                      Brand New
-                      <i className="fa-regular fa-xmark" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="products.html" className="clear">
-                      Clear All
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-lg-6 col-md-6">
-                <ul className="ps-0 mb-0 list-unstyled d-flex justify-content-md-end align-items-center flex-wrap gap-3 mt-4 mt-md-0">
-                  <li>
-                    <button className="filter-btn bg-transparent fw-bold">
-                      Filter +
-                    </button>
-                  </li>
-                  <li>
-                    <span>Showing 12 of 48 products</span>
-                  </li>
-                  <li>
-                    <select
-                      className="form-select border-0 default-sorting"
-                      aria-label="Default select example"
-                    >
-                      <option defaultValue>Default Sorting</option>
-                      <option value={1}>Smart Phone</option>
-                      <option value={2}>Computer</option>
-                      <option value={3}>Laptop</option>
-                    </select>
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
 
-          <div className="row justify-content-center">
+          <div className="row justify-content-center" ref={containerRef}>
             {data?.map((prod, idx) => (
-              <div key={idx} className="col-lg-3 col-sm-6">
+              <div
+                key={idx}
+                className={`col-lg-3 col-sm-6 mix ${prod.category}`}
+              >
                 <div className="product-single-item">
                   <div className="product-img">
                     <a href="product-details.html" className="d-block">
