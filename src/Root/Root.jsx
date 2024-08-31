@@ -18,10 +18,6 @@ import FooterTwo from "../components/FooterTwo/FooterTwo";
 import FooterThree from "../components/FooterThree/FooterThree";
 import NavbarTwo from "../components/NavbarTwo/NavbarTwo";
 import NavbarThree from "../components/NavbarThree/NavbarThree";
-<<<<<<< HEAD
-
-=======
->>>>>>> 3b32297c3641807e0afcd7101670bafd8cbb4a0f
 
 const Root = () => {
   const location = useLocation();
@@ -55,12 +51,8 @@ const Root = () => {
       <Preloader />
       {/* Render TopBar only on the Creative Agency page */}
       {pathname === "/" && <TopBar />}
-<<<<<<< HEAD
       {/* <div>{renderNavbar()}</div> */}
       <Navbar/>
-=======
-      <div>{renderNavbar()}</div>
->>>>>>> 3b32297c3641807e0afcd7101670bafd8cbb4a0f
       <Outlet />
       <div>{renderFooter()}</div>
       <BeckToTop />

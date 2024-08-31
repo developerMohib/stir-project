@@ -1,12 +1,9 @@
 import targetsvg from "../../../../assets/images/target.svg";
 import shape2 from "../../../../assets/images/shape-2.png";
 import bannerShape from "../../../../assets/images/banner-img-shape.png";
-<<<<<<< HEAD
+
 import bannerImg from "../../../../assets/images/banner-img.png";
-=======
-import bannerImg from "../../../../assets/images/banner-img.png"
 import { Link } from "react-router-dom";
->>>>>>> 3b32297c3641807e0afcd7101670bafd8cbb4a0f
 
 const Banner = () => {
   return (

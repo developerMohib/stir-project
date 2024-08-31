@@ -1,7 +1,6 @@
 import mapsvg from "../../../../assets/images/map.svg";
 import banner3 from "../../../../assets/images/banner-img-three.jpg";
 import shape4 from "../../../../assets/images/shape-4.png";
-import { Link } from "react-router-dom";
 const Banner = () => {
   return (
     <div className="banner-area-three position-relative">

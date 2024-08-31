@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-import { useEffect } from "react";
-import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel";
-// import useDataFetch from "../../../../components/Hooks/useDataFetch";
-
-const Services = () => {
-  // const { data } = useDataFetch({ url: "/services.json" });
 
   const items = [
     { id: 1, content: "1" },
@@ -22,18 +13,16 @@ const Services = () => {
     { id: 11, content: "11" },
     { id: 12, content: "12" },
   ];
-=======
 import { Link } from "react-router-dom";
 import OwlCarousel from "react-owl-carousel";
 import useDataFetch from "../../../../components/Hooks/useDataFetch";
 const Services = () => {
   const { data } = useDataFetch({ url: "/services.json" });
->>>>>>> 3b32297c3641807e0afcd7101670bafd8cbb4a0f
+
   const options = {
     loop: true,
     margin: 10,
     nav: true,
-<<<<<<< HEAD
     responsive: {
       0: {
         items: 1,
@@ -47,16 +36,6 @@ const Services = () => {
     },
   };
 
-  return (
-    <div className="owl-carousel owl-theme">
-      <div>
-        <h1> here likah</h1>
-=======
-    items: 1, // Number of items to show
-    autoplay: true,
-    autoplayTimeout: 3000, // Time in ms
-    autoplayHoverPause: true,
-  };
 
   return (
     <div className="services-area-two pb-100 overflow-hidden pos">
@@ -95,7 +74,6 @@ const Services = () => {
             <i className="fa-regular fa-arrow-right" />
           </Link>
         </div>
->>>>>>> 3b32297c3641807e0afcd7101670bafd8cbb4a0f
       </div>
       <OwlCarousel {...options}>
         {items.map((item) => (
