@@ -5,7 +5,7 @@ import "../assets/css/owl.carousel.min.css";
 import "../assets/css/owl.theme.default.min.css";
 import "../assets/css/icofont.min.css";
 import "../assets/css/font-awesome-pro.css";
-import "../assets/css/scrollcue.css";
+// import "../assets/css/scrollcue.css";
 import "../assets/css/magnific-popup.min.css";
 import "../assets/css/style.css";
 import "../assets/css/responsive.css";
