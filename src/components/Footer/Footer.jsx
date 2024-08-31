@@ -1,15 +1,15 @@
 import white_logo from "../../assets/images/white-logo.svg";
 import { Link } from "react-router-dom";
 
-const Footer = () => {
+const Footer = ({bgColor}) => {
   return (
     <div>
       {/*=== Start Footer Area ===*/}
-      <div className="footer-area pt-100 pb-75 bg-color-030303">
+      <div className={`footer-area pt-100 pb-75 ${bgColor ? "" : "bg-color-030303"}`}>
         <div className="container">
           <div className="row">
             <div className="col-lg-3 col-sm-6">
-              <div className="footer-single-item style-three">
+              <div className="footer-single-item ">
                 <a href="index.html" className="logo">
                   <img src={white_logo} alt="white-logo" />
                 </a>

@@ -52,7 +52,8 @@ const Root = () => {
       {/* Render TopBar only on the Creative Agency page */}
       {pathname === "/" && <TopBar />}
       {/* <div>{renderNavbar()}</div> */}
-      <Navbar/>
+      {/* <Navbar/> */}
+      <NavbarTwo />
       <Outlet />
       <div>{renderFooter()}</div>
       <BeckToTop />
