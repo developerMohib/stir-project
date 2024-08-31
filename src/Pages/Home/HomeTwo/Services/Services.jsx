@@ -1,18 +1,17 @@
-
-  const items = [
-    { id: 1, content: "1" },
-    { id: 2, content: "2" },
-    { id: 3, content: "3" },
-    { id: 4, content: "4" },
-    { id: 5, content: "5" },
-    { id: 6, content: "6" },
-    { id: 7, content: "7" },
-    { id: 8, content: "8" },
-    { id: 9, content: "9" },
-    { id: 10, content: "10" },
-    { id: 11, content: "11" },
-    { id: 12, content: "12" },
-  ];
+const items = [
+  { id: 1, content: "1" },
+  { id: 2, content: "2" },
+  { id: 3, content: "3" },
+  { id: 4, content: "4" },
+  { id: 5, content: "5" },
+  { id: 6, content: "6" },
+  { id: 7, content: "7" },
+  { id: 8, content: "8" },
+  { id: 9, content: "9" },
+  { id: 10, content: "10" },
+  { id: 11, content: "11" },
+  { id: 12, content: "12" },
+];
 import { Link } from "react-router-dom";
 import OwlCarousel from "react-owl-carousel";
 import useDataFetch from "../../../../components/Hooks/useDataFetch";
@@ -36,7 +35,6 @@ const Services = () => {
     },
   };
 
-
   return (
     <div className="services-area-two pb-100 overflow-hidden pos">
       <div className="container">
@@ -46,7 +44,8 @@ const Services = () => {
         </div>
         <div className="services-wrap" data-cues="slideInUp">
           <OwlCarousel
-            className="services-slide owl-carousel owl-theme" {...options}
+            className="services-slide owl-carousel owl-theme"
+            {...options}
           >
             {data?.map((ser, idx) => (
               <div key={idx} className="services-single-item-two">
@@ -64,8 +63,6 @@ const Services = () => {
                 </div>
               </div>
             ))}
-            
-
           </OwlCarousel>
         </div>
         <div className="text-center mt-lg-4 pt-lg-2">
@@ -79,7 +76,7 @@ const Services = () => {
         {items.map((item) => (
           <div className="item" key={item.id}>
             <h4>{item.content}</h4>
-          </div>
+          </div>          
         ))}
       </OwlCarousel>
     </div>
