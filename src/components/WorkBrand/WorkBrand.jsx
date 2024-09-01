@@ -22,7 +22,7 @@ const WorkBrand = () => {
               We Worked With Global Largest Brands
             </span>
           </div>
-          <div
+          <div 
             className="d-flex justify-content-center justify-content-lg-between flex-wrap gap-2"
             data-cues="slideInUp"
           >

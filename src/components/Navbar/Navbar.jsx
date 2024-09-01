@@ -362,21 +362,21 @@ const Navbar = () => {
                 <ul className="social-link ps-0 mb-0 list-unstyled">
                   <li>
                     <Link to="https://facebook.com/" target="_blank">
-                      <i className="fa-brands fa-facebook" />
+                    <i className="fa-brands fa-facebook-f"></i>
                     </Link>
                   </li>
                   <li>
                     <Link to="https://twitter.com/" target="_blank">
-                      <i className="fa-brands fa-twitter" />
+                    <i className="fa-brands fa-twitter"></i>
                     </Link>
                   </li>
                   <li>
                     <Link
-                      to="https://linkedin.com/"
+                      to="https://instagram.com/"
                       target="_blank"
                       
                     >
-                      <i className="fa-brands fa-instagram"></i>
+                     <i className="fa-brands fa-instagram"></i>
                     </Link>
                   </li>
                   <li>

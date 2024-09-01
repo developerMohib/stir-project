@@ -1,3 +1,4 @@
+import "./testominal.css";
 import test1 from "../../../../assets/images/testimonial-1.jpg";
 import test2 from "../../../../assets/images/testimonial-2.jpg";
 import quat from "../../../../assets/images/quat.svg";
@@ -17,7 +18,10 @@ const Testominal = () => {
     <div>
       <div className="testimonial-area pb-100">
         <div className="container">
-          <OwlCarousel className="testimonial-slide owl-carousel owl-theme" {...options}>
+          <OwlCarousel
+            className="testimonial-slide owl-carousel owl-theme"
+            {...options}
+          >
             <div className="d-md-flex align-items-center testimonial-single-item">
               <div className="flex-shrink-0">
                 <img
@@ -60,7 +64,7 @@ const Testominal = () => {
               </div>
               <img src={quat} className="quat" alt="quat" />
             </div>
-          </OwlCarousel>          
+          </OwlCarousel>
         </div>
       </div>
     </div>

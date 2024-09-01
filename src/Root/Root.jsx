@@ -1,4 +1,5 @@
 import { Outlet, useLocation } from "react-router-dom";
+import "../index.css";
 import "../assets/css/bootstrap.min.css";
 import "../assets/css/meanmenu.css";
 import "../assets/css/owl.carousel.min.css";
@@ -50,8 +51,8 @@ const Root = () => {
     <div>
       <Preloader />
       {pathname === "/" && <TopBar />}
-      {/* <div>{renderNavbar()}</div> */}
-      <Navbar/>
+      <div>{renderNavbar()}</div>
+      {/* <Navbar/> */}
       {/* <NavbarTwo /> */}
       {/* <NavbarThree /> */}
       <Outlet />

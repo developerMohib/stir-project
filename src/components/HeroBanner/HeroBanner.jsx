@@ -36,7 +36,7 @@ const HeroBanner = () => {
         style={{ backgroundImage: `url(${bannerBg})` }}
       >
         <div className="container mw-1680">
-          <div
+          <div 
             className="position-relative z-1"
             data-cues="slideInUp"
             data-group="images"
