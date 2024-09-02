@@ -1,8 +1,20 @@
-# React + Vite
+## Stir - Multipurpose Agency HTML Templete
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### This is multi-pages web application by react. Here has three home page and different menu.
 
-Currently, two official plugins are available:
+# How to run the web app
+```bash
+clone repo: 
+npm install 
+npm run dev
+```
+### Usages Packages :
+- React 
+- React Router Dom
+- owl carousel
+- magnific-popup
+- mixitup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Best Features
+- The multi purpose web application help user to maintain his simple busines
+- Web app owner can preset their company with beautifully
