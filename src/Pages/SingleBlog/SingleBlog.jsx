@@ -4,6 +4,7 @@ import blogdetails from "../../assets/images/blog-details-img.jpg";
 import quoteSvg from "../../assets/images/quote.svg";
 import blogimg12 from "../../assets/images/blog-12.jpg";
 import blogimg13 from "../../assets/images/blog-13.jpg";
+import { Link } from "react-router-dom";
 
 const SingleBlog = () => {
   return (
@@ -102,16 +103,16 @@ const SingleBlog = () => {
                   <span>Tags:</span>
                 </li>
                 <li>
-                  <a href="blog.html">Design</a>
+                  <Link to="/blog">Design</Link>
                 </li>
                 <li>
-                  <a href="blog.html">Development</a>
+                  <Link to="/blog">Development</Link>
                 </li>
                 <li>
-                  <a href="blog.html">Planning</a>
+                  <Link to="/blog">Planning</Link>
                 </li>
                 <li>
-                  <a href="blog.html">Marketing</a>
+                  <Link to="/blog">Marketing</Link>
                 </li>
               </ul>
               <ul className="ps-0 mb-0 list-unstyled d-flex social-list align-items-center gap-3">

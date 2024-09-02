@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import shapeBg from "../../assets/images/banner-bg-shape.png";
 import BreadCump from "../../components/BreadCump/BreadCump";
 import Contact from "../../components/Contact/Contact";
@@ -22,7 +23,7 @@ const Services = () => {
                     />
                   </div>
                   <h3>
-                    <a href="service-details.html">{service.serviceName}</a>
+                    <Link to="/service-details">{service.serviceName}</Link>
                   </h3>
                   <p>{service.title}</p>
                   <ul className="ps-0 mb-0 list-unstyled">

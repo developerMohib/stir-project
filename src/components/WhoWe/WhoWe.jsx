@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import whoWeare from "../../assets/images/who-we-are-img.png";
+import { Link } from "react-router-dom";
 
 const WhoWe = () => {
 
@@ -95,13 +96,13 @@ const WhoWe = () => {
                 </div>
               </div>
               <div className="d-inline-block">
-                <a
-                  href="about-us.html"
+                <Link
+                  to="/about-us"
                   className="circle-btn d-inline-block text-decoration-none mt-4 mt-xl-5 d-flex align-items-center"
                 >
                   <span>Learn More</span>
                   <i className="fa-solid fa-arrow-up-right" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo2 from "../../assets/images/white-logo-2.svg";
 const FooterTwo = () => {
   return (
@@ -8,7 +9,7 @@ const FooterTwo = () => {
           <div className="row">
             <div className="col-xl-4" data-cues="slideInUp">
               <div className="footer-single-item style-two">
-                <a href="index.html" className="logo">
+                <a href="" className="logo">
                   <img src={logo2} alt="white-logo" />
                 </a>
                 <p>
@@ -47,19 +48,19 @@ const FooterTwo = () => {
                     <h3>Our Services</h3>
                     <ul className="useful-link">
                       <li>
-                        <a href="services.html">Strategic Consulting</a>
+                        <Link to="/services">Strategic Consulting</Link>
                       </li>
                       <li>
-                        <a href="services.html">Digital Marketing</a>
+                        <Link to="/services">Digital Marketing</Link>
                       </li>
                       <li>
-                        <a href="services.html">Brand Development</a>
+                        <Link to="/services">Brand Development</Link>
                       </li>
                       <li>
-                        <a href="services.html">Financial Advisory</a>
+                        <Link to="/services">Financial Advisory</Link>
                       </li>
                       <li>
-                        <a href="services.html">Technology Solutions</a>
+                        <Link to="/</li>services">Technology Solutions</Link>
                       </li>
                     </ul>
                   </div>
@@ -69,19 +70,19 @@ const FooterTwo = () => {
                     <h3>Our Services</h3>
                     <ul className="useful-link">
                       <li>
-                        <a href="services.html">Strategic Consulting</a>
+                        <Link to="/services">Strategic Consulting</Link>
                       </li>
                       <li>
-                        <a href="services.html">Digital Marketing</a>
+                        <Link to="/services">Digital Marketing</Link>
                       </li>
                       <li>
-                        <a href="services.html">Brand Development</a>
+                        <Link to="/services">Brand Development</Link>
                       </li>
                       <li>
-                        <a href="services.html">Financial Advisory</a>
+                        <Link to="/services">Financial Advisory</Link>
                       </li>
                       <li>
-                        <a href="services.html">Technology Solutions</a>
+                        <Link to="/services">Technology Solutions</Link>
                       </li>
                     </ul>
                   </div>

@@ -395,7 +395,7 @@ const NavbarTwo = () => {
         <div className="container">
           <div className="mobile-menu">
             <div className="logo">
-              <a href="index.html">
+              <a href="">
                 <img src={white_logo} alt="logo" />
               </a>
             </div>

@@ -1,16 +1,23 @@
 import white_logo from "../../assets/images/white-logo.svg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
-const Footer = ({bgColor}) => {
+const Footer = () => {
+  const location = useLocation();
+  const pathname = location.pathname ;
+ 
   return (
     <div>
       {/*=== Start Footer Area ===*/}
-      <div className={`footer-area pt-100 pb-75 ${bgColor ? "" : "bg-color-030303"}`}>
+      <div
+        className={`footer-area pt-100 pb-75 ${
+          pathname === "/" ? "bg-white" : "bg-color-030303"
+        }`}
+      >
         <div className="container">
           <div className="row">
             <div className="col-lg-3 col-sm-6">
-              <div className="footer-single-item ">
-                <a href="index.html" className="logo">
+              <div className={`footer-single-item ${pathname !== "/" ? "style-three" : ""}`}>
+                <a href="/" className="logo">
                   <img src={white_logo} alt="white-logo" />
                 </a>
                 <p>
@@ -20,22 +27,22 @@ const Footer = ({bgColor}) => {
                 <ul className="social-link ps-0 mb-0 list-unstyled">
                   <li>
                     <Link to="https://facebook.com/" target="_blank">
-										<i className="fa-brands fa-facebook-f"></i>
+                      <i className="fa-brands fa-facebook-f"></i>
                     </Link>
                   </li>
                   <li>
                     <Link to="https://twitter.com/" target="_blank">
-										<i className="fa-brands fa-twitter"></i>
+                      <i className="fa-brands fa-twitter"></i>
                     </Link>
                   </li>
                   <li>
-                    <Link to="https://instagram.com/" target="_blank">                      
-										<i className="fa-brands fa-instagram"></i>
+                    <Link to="https://instagram.com/" target="_blank">
+                      <i className="fa-brands fa-instagram"></i>
                     </Link>
                   </li>
                   <li>
                     <Link to="https://linkedin.com/" target="_blank">
-                     <i className="fa-brands fa-linkedin-in" />
+                      <i className="fa-brands fa-linkedin-in" />
                     </Link>
                   </li>
                 </ul>
@@ -46,19 +53,19 @@ const Footer = ({bgColor}) => {
                 <h3>Useful Links</h3>
                 <ul className="useful-link">
                   <li>
-                    <a href="about-us.html">About Us</a>
+                    <Link to="/about-us">About Us</Link>
                   </li>
                   <li>
-                    <a href="case-study.html">Case Study</a>
+                    <Link to="/case-study">Case Study</Link>
                   </li>
                   <li>
-                    <a href="services.html">Our Service</a>
+                    <Link to="/services">Our Service</Link>
                   </li>
                   <li>
-                    <a href="contact-us.html">Contact Us</a>
+                    <Link to="/contact-us">Contact Us</Link>
                   </li>
                   <li>
-                    <a href="faq.html">FAQs</a>
+                    <Link to="/faq">FAQs</Link>
                   </li>
                 </ul>
               </div>
@@ -89,7 +96,7 @@ const Footer = ({bgColor}) => {
                 <form className="position-relative z-1">
                   <input
                     type="text"
-                    className="form-control"
+                    className={`form-control  ${pathname === "/" ? "bg-white border-none" : "bg-color-030303"}`}
                     placeholder="Enter your email"
                   />
                   <button
@@ -106,9 +113,9 @@ const Footer = ({bgColor}) => {
       </div>
       {/*=== End Footer Area ===*/}
       {/*=== Start CopyRight Area ===*/}
-      <div className="bg-color-030303">
+      <div className={`${pathname === "/" ? "bg-white" : "bg-color-030303"}`}>
         <div className="container">
-          <p className="copy-right style-three">
+          <p className="copy-right">
             Copyright, <span>Stir</span> All Rights Reserved
           </p>
         </div>

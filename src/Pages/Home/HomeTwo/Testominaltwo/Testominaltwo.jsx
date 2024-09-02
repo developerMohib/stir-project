@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Testominal from "../../../../components/Testominal/Testominal";
 
 const Testominaltwo = () => {
@@ -6,44 +7,44 @@ const Testominaltwo = () => {
       {/* Start marquee Us Area */}
       <div className="marquee-area bg-color-dcfd68">
         <div className="container-fluid">
-          <div className="marquee-wrapper">
+          <div className="marquee-wrapper"> 
             <div className="marquee" data-cues="slideInUp">
-              <a href="contact-us.html">
+              <Link to="/contact-us">
                 <span>CONTACT US</span>
-              </a>
-              <a href="contact-us.html">
+              </Link>
+              <Link to="/contact-us">
                 <span>OUR CASE STUDIES</span>
-              </a>
-              <a href="contact-us.html">
+              </Link>
+              <Link to="/contact-us">
                 <span>LET’S TALK</span>
-              </a>
-              <a href="contact-us.html">
+              </Link>
+              <Link to="/contact-us">
                 <span>GET IN TOUCH</span>
-              </a>
-              <a href="contact-us.html">
+              </Link>
+              <Link to="/contact-us">
                 <span>CONTACT US</span>
-              </a>
-              <a href="contact-us.html">
+              </Link>
+              <Link to="/contact-us">
                 <span>OUR CASE STUDIES</span>
-              </a>
-              <a href="contact-us.html">
+              </Link>
+              <Link to="/contact-us">
                 <span>LET’S TALK</span>
-              </a>
-              <a href="contact-us.html">
+              </Link>
+              <Link to="/contact-us">
                 <span>GET IN TOUCH</span>
-              </a>
-              <a href="contact-us.html">
+              </Link>
+              <Link to="/contact-us">
                 <span>CONTACT US</span>
-              </a>
-              <a href="contact-us.html">
+              </Link>
+              <Link to="/contact-us">
                 <span>OUR CASE STUDIES</span>
-              </a>
-              <a href="contact-us.html">
+              </Link>
+              <Link to="/contact-us">
                 <span>LET’S TALK</span>
-              </a>
-              <a href="contact-us.html">
+              </Link>
+              <Link to="/contact-us">
                 <span>GET IN TOUCH</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

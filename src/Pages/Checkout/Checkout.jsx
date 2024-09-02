@@ -2,6 +2,7 @@ import shapeBg from "../../assets/images/banner-bg-shape.png";
 import BreadCump from "../../components/BreadCump/BreadCump";
 import cart4 from "../../assets/images/cart-4.jpg";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const Checkout = () => {
   
   const [count, setCount] = useState(1);
@@ -352,15 +353,15 @@ const Checkout = () => {
                       htmlFor="flexCheckDefault4"
                     >
                       I agree to the website{" "}
-                      <a href="terms-conditions.html">terms &amp; conditions</a>
+                      <Link to="/terms-conditions ">terms &amp; conditions</Link>
                     </label>
                   </div>
-                  <a
-                    href="checkout.html"
+                  <Link
+                    to="/checkout "
                     className="main-btn w-100 text-center"
                   >
                     Place Order
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

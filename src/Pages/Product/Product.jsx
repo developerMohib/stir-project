@@ -4,6 +4,7 @@ import BreadCump from "../../components/BreadCump/BreadCump";
 import Pagination from "../../components/Pagination/Pagination";
 import { useEffect, useRef } from "react";
 import mixitup from "mixitup";
+import { Link } from "react-router-dom";
 
 const Product = () => {
   const { data } = useDataFetch({ url: "/product.json" });
@@ -53,22 +54,22 @@ const Product = () => {
                   <li>
                     <span>Your filter</span>
                   </li>
-                  <li>
-                    <a href="products.html" className="tag">
+                  <li> 
+                    <Link to="/products" className="tag">
                       Electric
                       <i className="fa-regular fa-xmark" />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="products.html" className="tag">
+                    <Link to="/products" className="tag">
                       Brand New
                       <i className="fa-regular fa-xmark" />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="products.html" className="clear">
+                    <Link to="/products" className="clear">
                       Clear All
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -106,29 +107,29 @@ const Product = () => {
               >
                 <div className="product-single-item">
                   <div className="product-img">
-                    <a href="product-details.html" className="d-block">
+                    <Link to="/product-details" className="d-block">
                       <img src={prod.productImg} alt="product" />
-                    </a>
+                    </Link>
                     <ul className="ps-0 mb-0 list-unstyled social-link">
                       <li>
-                        <a href="product-details.html">
+                        <Link to="/product-details">
                           <i className="fa-regular fa-heart" />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="product-details.html">
+                        <Link to="/product-details">
                           <i className="fa-regular fa-eye" />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="product-details.html">
+                        <Link to="/product-details">
                           <i className="fa-sharp fa-solid fa-arrows-rotate" />
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                   <h3>
-                    <a href="product-details.html">{prod.productName}</a>
+                    <Link to="/product-details">{prod.productName}</Link>
                   </h3>
                   <span>
                     <del>${prod.productPriceDel} </del> ${prod.productPrice}

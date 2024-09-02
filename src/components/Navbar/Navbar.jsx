@@ -4,7 +4,6 @@ import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
-
   const location = useLocation();
   useEffect(() => {
     const handleScroll = () => {

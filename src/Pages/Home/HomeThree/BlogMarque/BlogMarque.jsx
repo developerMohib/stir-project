@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import caseStudy6 from "../../../../assets/images/case-study-6.jpg"
 import caseStudy7 from "../../../../assets/images/case-study-7.jpg"
 import caseStudy8 from "../../../../assets/images/case-study-8.jpg"
@@ -23,134 +24,134 @@ const BlogMarque = () => {
         <div className="row" data-cues="slideInUp">
           <div className="col-lg-6">
             <div className="case-study-single-item-three">
-              <a
-                href="cases-study-details.html"
+              <Link
+                to="/cases-study-details"
                 className="d-block case-study-img"
               >
                 <img src={caseStudy6} alt="case-study" />
-              </a>
+              </Link>
               <ul className="ps-0 list-unstyled d-flex flex-wrap gap-3 tags">
                 <li>
-                  <a href="case-study.html">Branding</a>
+                  <Link to="/case-study ">Branding</Link>
                 </li>
                 <li>
-                  <a href="case-study.html">Development</a>
+                  <Link to="/case-study ">Development</Link>
                 </li>
                 <li>
-                  <a href="case-study.html">Marketing</a>
+                  <Link to="/case-study ">Marketing</Link>
                 </li>
               </ul>
               <h3>
-                <a href="cases-study-details.html">
+                <Link to="/cases-study-details ">
                   Creating high-quality video content, including promotional
                   videos, tutorials,
-                </a>
+                </Link>
               </h3>
-              <a
-                href="cases-study-details.html"
+              <Link
+                to="/cases-study-details "
                 className="circle-btn d-inline-block text-decoration-none d-flex align-items-center"
               >
                 <span>Learn More</span>
                 <i className="fa-solid fa-arrow-up-right" />
-              </a>
+              </Link>
             </div>
             <div className="case-study-single-item-three">
-              <a
-                href="cases-study-details.html"
+              <Link
+                to="/cases-study-details "
                 className="d-block case-study-img"
               >
                 <img src={caseStudy8} alt="case-study" />
-              </a>
+              </Link>
               <ul className="ps-0 list-unstyled d-flex flex-wrap gap-3 tags">
                 <li>
-                  <a href="case-study.html">Branding</a>
+                  <Link to="/case-study ">Branding</Link>
                 </li>
                 <li>
-                  <a href="case-study.html">Development</a>
+                  <Link to="/case-study ">Development</Link>
                 </li>
                 <li>
-                  <a href="case-study.html">Marketing</a>
+                  <Link to="/case-study ">Marketing</Link>
                 </li>
               </ul>
               <h3>
-                <a href="cases-study-details.html">
+                <Link to="/cases-study-details ">
                   Optimizing online presence for local businesses, including
                   local SEO strategies,
-                </a>
+                </Link>
               </h3>
-              <a
-                href="cases-study-details.html"
+              <Link
+                to="/cases-study-details "
                 className="circle-btn d-inline-block text-decoration-none d-flex align-items-center"
               >
                 <span>Learn More</span>
                 <i className="fa-solid fa-arrow-up-right" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-lg-6 mt-100">
             <div className="case-study-single-item-three">
-              <a
-                href="cases-study-details.html"
+              <Link
+                to="/cases-study-details "
                 className="d-block case-study-img"
               >
                 <img src={caseStudy7} alt="case-study" />
-              </a>
+              </Link>
               <ul className="ps-0 list-unstyled d-flex flex-wrap gap-3 tags">
                 <li>
-                  <a href="case-study.html">Branding</a>
+                  <Link to="/case-study ">Branding</Link>
                 </li>
                 <li>
-                  <a href="case-study.html">Development</a>
+                  <Link to="/case-study ">Development</Link>
                 </li>
                 <li>
-                  <a href="case-study.html">Marketing</a>
+                  <Link to="/case-study ">Marketing</Link>
                 </li>
               </ul>
               <h3>
-                <a href="cases-study-details.html">
+                <Link to="/cases-study-details ">
                   Collaborating with influential individuals or personalities on
                   social media,
-                </a>
+                </Link>
               </h3>
-              <a
-                href="cases-study-details.html"
+              <Link
+                to="/cases-study-details "
                 className="circle-btn d-inline-block text-decoration-none d-flex align-items-center"
               >
                 <span>Learn More</span>
                 <i className="fa-solid fa-arrow-up-right" />
-              </a>
+              </Link>
             </div>
             <div className="case-study-single-item-three">
-              <a
-                href="cases-study-details.html"
+              <Link
+                to="/cases-study-details "
                 className="d-block case-study-img"
               >
                 <img src={caseStudy9} alt="case-study" />
-              </a>
+              </Link>
               <ul className="ps-0 list-unstyled d-flex flex-wrap gap-3 tags">
                 <li>
-                  <a href="case-study.html">Branding</a>
+                  <Link to="/case-study ">Branding</Link>
                 </li>
                 <li>
-                  <a href="case-study.html">Development</a>
+                  <Link to="/case-study ">Development</Link>
                 </li>
                 <li>
-                  <a href="case-study.html">Marketing</a>
+                  <Link to="/case-study ">Marketing</Link>
                 </li>
               </ul>
               <h3>
-                <a href="cases-study-details.html">
+                <Link to="/cases-study-details ">
                   Running targeted paid advertisements on social media platforms
                   to reach specific,
-                </a>
+                </Link>
               </h3>
-              <a
-                href="cases-study-details.html"
+              <Link
+                to="/cases-study-details "
                 className="circle-btn d-inline-block text-decoration-none d-flex align-items-center"
               >
                 <span>Learn More</span>
                 <i className="fa-solid fa-arrow-up-right" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

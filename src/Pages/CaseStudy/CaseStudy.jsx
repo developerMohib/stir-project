@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import shapeBg from "../../assets/images/banner-bg-shape.png";
 import BreadCump from "../../components/BreadCump/BreadCump";
 import Contact from "../../components/Contact/Contact";
@@ -15,15 +16,15 @@ const CaseStudy = () => {
             {data?.map((bcase, idx) => (
               <div key={idx} className="col-lg-4 col-md-6">
                 <div className="recent-cases-single-item style-two mb-4">
-                  <a href="cases-study-details.html" className="tag">
+                  <Link to="/cases-study-details" className="tag">
                     {bcase.category}
-                  </a>
+                  </Link>
                   <h3>
-                    <a href="cases-study-details.html">{bcase.title}</a>
+                    <Link to="/cases-study-details">{bcase.title}</Link>
                   </h3>
-                  <a href="cases-study-details.html" className="cases-img">
+                  <Link to="/cases-study-details" className="cases-img">
                     <img src={bcase.caseImg} alt="cases" />
-                  </a>
+                  </Link>
                   <p>{bcase.details}</p>
                 </div>
               </div>

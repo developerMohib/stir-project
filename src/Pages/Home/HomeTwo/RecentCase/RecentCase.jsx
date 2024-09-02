@@ -73,19 +73,19 @@ const RecentCase = () => {
           }}
         >
           {recentCases?.map((testimonial, index) => (
-            <div key={index}>
+            <div key={index}> 
               <div className="recent-cases-single-item">
-                <a href="case-study.html" className="tag">
+              <Link to="/case-study" className="tag">
                   {testimonial.category}
-                </a>
+                </Link>
                 <h3>
-                  <a href="case-study.html">
+                <Link to="/case-study">
                     {testimonial.title}
-                  </a>
+                  </Link>
                 </h3>
-                <a href="case-study.html" className="cases-img">
+                <Link to="/case-study" className="cases-img">
                   <img src={testimonial.image} alt="cases" />
-                </a>
+                </Link>
                 <p>
                   {testimonial.about}
                 </p>

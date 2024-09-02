@@ -52,7 +52,7 @@ const TestominalPage = () => {
             ))}
           </div>
         </div>
-        <Pagination link={"testimonials"} />
+        <Pagination />
       </div>
     </div>
   );

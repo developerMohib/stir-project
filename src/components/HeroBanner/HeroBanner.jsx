@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import $ from 'jquery';
 import "magnific-popup";
 import "magnific-popup/dist/magnific-popup.css"
+import { Link } from "react-router-dom";
 
 
 const HeroBanner = () => {
@@ -49,12 +50,12 @@ const HeroBanner = () => {
               <h1>
                 Based in <span>Canada</span>
               </h1>
-              <a href="services.html" className="banner-btn">
+              <Link to="/services" className="banner-btn">
                 <span>
                   Explore Our Services
                   <i className="fa-solid fa-arrow-up-right"></i>
                 </span>
-              </a>
+              </Link>
             </div>
             <div className="creative-agency">
               <div className="position-relative d-block text-center m-auto video-img">

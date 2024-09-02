@@ -4,6 +4,7 @@ import "magnific-popup";
 import "magnific-popup/dist/magnific-popup.css"
 
 import aboutus2 from "../../../../assets/images/about-us-2.png";
+import { Link } from 'react-router-dom';
 const KnowUs = () => {
   useEffect(() => {
     // Initialize magnificPopup
@@ -48,10 +49,10 @@ const KnowUs = () => {
                 consulting
               </p>
               <div className="d-flex align-items-center position-relative mt-40">
-                <a href="about-us.html" className="main-btn style-two">
+                <Link to="/about-us" className="main-btn style-two">
                   Discover More
                   <i className="fa-regular fa-arrow-right" />
-                </a>
+                </Link>
                 <a
                   href="https://www.youtube.com/watch?v=oGOO94rRzCQ"
                   className="video-btn ms-3 ms-lg-5 popup-youtube"

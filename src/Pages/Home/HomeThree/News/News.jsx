@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import blog3 from "../../../../assets/images/blog-3.jpg"
 import blog4 from "../../../../assets/images/blog-4.jpg"
 const News = () => {
@@ -14,60 +15,60 @@ const News = () => {
             <h1>and News</h1>
           </div>
         </div>
-      </div>
+      </div>      
       <div className="container">
         <div className="row justify-content-center" data-cues="slideInUp">
           <div className="col-lg-6">
             <div className="case-study-single-item-three">
-              <a href="single-blog.html" className="d-block case-study-img">
+              <Link to="/single-blog" className="d-block case-study-img">
                 <img src={blog3} alt="blog" />
-              </a>
+              </Link>
               <ul className="ps-0 list-unstyled d-flex flex-wrap gap-3 tags">
                 <li>
-                  <a href="blog.html">Branding</a>
+                  <Link to="/blog">Branding</Link>
                 </li>
                 <li>
-                  <a href="blog.html">Development</a>
+                  <Link to="/blog">Development</Link>
                 </li>
                 <li>
-                  <a href="blog.html">Marketing</a>
+                  <Link to="/blog">Marketing</Link>
                 </li>
                 <li>
-                  <a href="blog.html">3 Minutes Read</a>
+                  <Link to="/blog">3 Minutes Read</Link>
                 </li>
               </ul>
               <h3>
-                <a href="single-blog.html">
+                <Link to="/single-blog">
                   Improving user experience (UX) and user interface (UI) design
                   on websites, apps,
-                </a>
+                </Link>
               </h3>
             </div>
           </div>
           <div className="col-lg-6">
             <div className="case-study-single-item-three">
-              <a href="single-blog.html" className="d-block case-study-img">
+              <Link to="/single-blog" className="d-block case-study-img">
                 <img src={blog4} alt="blog" />
-              </a>
+              </Link>
               <ul className="ps-0 list-unstyled d-flex flex-wrap gap-3 tags">
                 <li>
-                  <a href="blog.html">Branding</a>
+                  <Link to="/blog">Branding</Link>
                 </li>
                 <li>
-                  <a href="blog.html">Development</a>
+                  <Link to="/blog">Development</Link>
                 </li>
                 <li>
-                  <a href="blog.html">Marketing</a>
+                  <Link to="/blog">Marketing</Link>
                 </li>
                 <li>
-                  <a href="blog.html">3 Minutes Read</a>
+                  <Link to="/blog">3 Minutes Read</Link>
                 </li>
               </ul>
               <h3>
-                <a href="single-blog.html">
+                <Link to="/single-blog">
                   Creating chatbot solutions for websites and social media
                   platforms to automate customer,
-                </a>
+                </Link>
               </h3>
             </div>
           </div>

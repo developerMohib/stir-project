@@ -4,6 +4,7 @@ import serviceDetailsImg from "../../assets/images/services-img-1.jpg";
 import serviceImg1 from "../../assets/images/services-img-1.jpg";
 import serviceSvg from "../../assets/images/services-icon-1.svg";
 import serviceSvg1 from "../../assets/images/services-icon-2.svg";
+import { Link } from "react-router-dom";
 
 const ServiceDetails = () => {
   return (
@@ -54,9 +55,9 @@ const ServiceDetails = () => {
                         </div>
                         <div className="flex-grow-1 ms-sm-3">
                           <h3>
-                            <a href="service-details.html">
+                            <Link to="/service-details">
                               Strategy Consulting
-                            </a>
+                            </Link>
                           </h3>
                           <p className="border-0 p-0 m-0">
                             Expert guidance in formulating and growth.
@@ -80,7 +81,7 @@ const ServiceDetails = () => {
                         </div>
                         <div className="flex-grow-1 ms-sm-3">
                           <h3>
-                            <a href="service-details.html">Digital Marketing</a>
+                            <Link to="/service-details">Digital Marketing</Link>
                           </h3>
                           <p className="border-0 p-0 m-0">
                             Expert guidance in formulating and growth.
@@ -330,22 +331,22 @@ const ServiceDetails = () => {
                   <h3>Service List</h3>
                   <ul className="ps-0 mb-0 list-unstyled service-list">
                     <li>
-                      <a href="services.html">01 Strategy Consulting</a>
+                      <Link to="/services">01 Strategy Consulting</Link>
                     </li>
                     <li>
-                      <a href="services.html">02 Digital Marketing</a>
+                      <Link to="/services">02 Digital Marketing</Link>
                     </li>
                     <li>
-                      <a href="services.html">03 Web Development</a>
+                      <Link to="/services">03 Web Development</Link>
                     </li>
                     <li>
-                      <a href="services.html">04 Creative Design</a>
+                      <Link to="/services">04 Creative Design</Link>
                     </li>
                     <li>
-                      <a href="services.html">05 Business Strategy</a>
+                      <Link to="/services">05 Business Strategy</Link>
                     </li>
                     <li>
-                      <a href="services.html">06 Website Design</a>
+                      <Link to="/services">06 Website Design</Link>
                     </li>
                   </ul>
                 </div>

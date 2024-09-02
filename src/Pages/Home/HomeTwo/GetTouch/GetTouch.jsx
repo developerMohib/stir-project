@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import bgImg from "../../../../assets/images/get-in-bg.jpg";
 
 const GetTouch = () => {
@@ -16,10 +17,10 @@ const GetTouch = () => {
           </div>
           <div className="col-lg-4">
             <div className="get-in-touch-btn text-center text-lg-end mt-4 mt-lg-0">
-              <a href="contact-us.html">
+              <Link to="/contact-us">
                 <span>Let’s Talk</span>
                 <i className="fa-regular fa-arrow-right" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

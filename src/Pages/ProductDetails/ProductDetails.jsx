@@ -3,6 +3,7 @@ import BreadCump from "../../components/BreadCump/BreadCump";
 import productImg from "../../assets/images/product-details-img.jpg";
 import useDataFetch from "../../components/Hooks/useDataFetch";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const ProductDetails = () => {
   const { data } = useDataFetch({ url: "/product.json" });
@@ -90,16 +91,16 @@ const ProductDetails = () => {
                     <span onClick={()=>setCount(count + 1)} className="plus-btn">
                       <i className="fa-regular fa-plus" />
                     </span>
-                  </div>
-                  <a href="cart.html" className="main-btn active">
+                  </div> 
+                  <Link to="/cart" className="main-btn active">
                     Add To Cart
-                  </a>
-                  <a href="checkout.html" className="main-btn">
+                  </Link>
+                  <Link to="/checkout" className="main-btn">
                     Buy Now
-                  </a>
-                  <a href="cart.html" className="wish-btn">
+                  </Link>
+                  <Link to="/cart" className="wish-btn">
                     <i className="fa-regular fa-heart" />
-                  </a>
+                  </Link>
                 </div>
                 <ul className="features-list ps-0 list-unstyled">
                   <li>
@@ -121,34 +122,34 @@ const ProductDetails = () => {
                     <span>Share:</span>
                   </li>
                   <li>
-                    <a href="https://www.facebook.com/" target="_blank">
+                    <Link to="/https://www.facebook.com/" target="_blank">
                       <i className="fa-brands fa-facebook-f" />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="https://www.twitter.com/" target="_blank">
+                    <Link to="/https://www.twitter.com/" target="_blank">
                       <i className="fa-brands fa-twitter" />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/" target="_blank">
+                    <Link to="/https://www.instagram.com/" target="_blank">
                       <i className="fa-brands fa-instagram" />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="https://www.pinterest.com/" target="_blank">
+                    <Link to="/https://www.pinterest.com/" target="_blank">
                       <i className="fa-brands fa-pinterest-p" />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="https://www.tiktok.com/" target="_blank">
+                    <Link to="/https://www.tiktok.com/" target="_blank">
                       <i className="fa-brands fa-tiktok" />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com/" target="_blank">
+                    <Link to="/https://www.linkedin.com/" target="_blank">
                       <i className="fa-brands fa-linkedin-in" />
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -284,9 +285,9 @@ const ProductDetails = () => {
                         </p>
                       </div>
                     </div>
-                    <a href="product-details.html" className="main-btn">
+                    <Link to="/product-details" className="main-btn">
                       Reply
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -368,29 +369,29 @@ const ProductDetails = () => {
               <div key={idx} className="col-lg-3 col-sm-6">
                 <div className="product-single-item">
                   <div className="product-img">
-                    <a href="product-details.html" className="d-block">
+                    <Link to="/product-details" className="d-block">
                       <img src={prod.productImg} alt="product" />
-                    </a>
+                    </Link>
                     <ul className="ps-0 mb-0 list-unstyled social-link">
                       <li>
-                        <a href="product-details.html">
+                        <Link to="/product-details">
                           <i className="fa-regular fa-heart" />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="product-details.html">
+                        <Link to="/product-details">
                           <i className="fa-regular fa-eye" />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="product-details.html">
+                        <Link to="/product-details">
                           <i className="fa-sharp fa-solid fa-arrows-rotate" />
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                   <h3>
-                    <a href="product-details.html">{prod.productName}</a>
+                    <Link to="/product-details">{prod.productName}</Link>
                   </h3>
                   <span>
                     <del>${prod.productPriceDel} </del> ${prod.productPrice}

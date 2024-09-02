@@ -4,6 +4,7 @@ import Testominal from "../../components/Testominal/Testominal";
 import shapeBg from "../../assets/images/banner-bg-shape.png";
 import useDataFetch from "../../components/Hooks/useDataFetch";
 import Pagination from "../../components/Pagination/Pagination";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   const { data } = useDataFetch({ url: "/blog.json" });
@@ -17,9 +18,9 @@ const Blog = () => {
             {data?.map((blg, idx) => (
               <div key={idx} className="col-xl-4 col-md-6">
                 <div className="blog-single-item style-two">
-                  <a href="single-blog.html" className="d-block blog-img">
+                  <Link to="/single-blog" className="d-block blog-img">
                     <img src={blg.blogImg} alt="blog" />
-                  </a>
+                  </Link>
                   <ul className="ps-0 list-unstyled date">
                     <li>
                       <span> {blg.publishDate} </span>
@@ -27,7 +28,7 @@ const Blog = () => {
                     <li> {blg.readTime} </li>
                   </ul>
                   <h3>
-                    <a href="single-blog.html"> {blg.blogTitle} </a>
+                    <Link to="/single-blog"> {blg.blogTitle} </Link>
                   </h3>
                 </div>
               </div>

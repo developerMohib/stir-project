@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import useDataFetch from "../../../../components/Hooks/useDataFetch";
 
 const Services = () => {
@@ -18,14 +19,15 @@ const Services = () => {
                 alt="services-icon"
               />
               <h3>
-                <a href="service-details.html"> {ser.serviceName} </a>
+                
+                <Link to="/service-details"> {ser.serviceName} </Link>
               </h3>
               <p>
                 {ser.title}
               </p>
-              <a href="service-details.html" className="read-more">
+              <Link to="/service-details" className="read-more">
                 VIEW DETAILS
-              </a>
+              </Link>
             </div>
           </div>))
     }
