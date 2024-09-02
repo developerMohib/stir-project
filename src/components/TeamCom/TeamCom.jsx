@@ -1,12 +1,13 @@
 import useDataFetch from "../Hooks/useDataFetch";
 
-const TeamCom = () => {
+const TeamCom = ({len}) => {
   const { data } = useDataFetch({ url: "/team.json" });
+  const displayData = len && len <= data?.length ? data.slice(0, len) : data;
   return (
     <div className="team-area">
       <div className="container">
         <div className="row justify-content-center">
-          {data?.map((member, idx) => (
+          {displayData?.map((member, idx) => (
             <div key={idx} className="col-xl-3 col-md-6">
               <div className="team-single-item style-two">
                 <img src={member.image} alt="team" />

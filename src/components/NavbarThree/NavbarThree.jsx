@@ -7,7 +7,6 @@ const NavbarThree = () => {
   const location = useLocation();
   useEffect(() => {
     const handleScroll = () => {
-      console.log("ScrollY:", window.scrollY); // Debugging line
       if (window.scrollY > 150) {
         setIsSticky(true);
       } else {

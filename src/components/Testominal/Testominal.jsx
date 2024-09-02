@@ -9,7 +9,7 @@ const Testominal = () => {
     nav: true,
     items: 1, // Number of items to show
     autoplay: true,
-    autoplayTimeout: 3000, // Time in ms
+    autoplayTimeout: 2500, // Time in ms
     autoplayHoverPause: true,
   };
   return (

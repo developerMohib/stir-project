@@ -7,7 +7,7 @@ import icon7 from "../../../../assets/images/services-icon-7.svg";
 import icon8 from "../../../../assets/images/services-icon-8.svg";
 
 const Services = () => {
-  const testimonials = [
+  const servieces = [
     {
       iconImg: icon5,
       serviceName: "Strategic Consulting",
@@ -65,7 +65,7 @@ const Services = () => {
                   },
                 }}
               >
-                {testimonials?.map((testimonial, index) => (
+                {servieces?.map((testimonial, index) => (
                   <div key={index} className="services-single-item-two">
                     <span className="borders" />
                     <h3>

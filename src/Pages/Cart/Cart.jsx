@@ -2,9 +2,12 @@ import { Link } from "react-router-dom";
 import BreadCump from "../../components/BreadCump/BreadCump";
 import shapeBg from "../../assets/images/banner-bg-shape.png";
 import useDataFetch from "../../components/Hooks/useDataFetch";
+import { useState } from "react";
 
 const Cart = () => {
     const { data } = useDataFetch({ url: "/cart.json"});
+    const [count, setCount] = useState(1);
+
   return (
     <>
       <BreadCump bgImg={shapeBg} pageName={"Cart"} />
@@ -29,11 +32,11 @@ const Cart = () => {
                           <h3> {item.itemName} </h3>
                           <span className="color">{item.itemColor}</span>
                           <div className="input-counter d-flex justify-content-between">
-                            <span className="minus-btn">
+                            <span onClick={() => count > 0 && setCount(count - 1)} className="minus-btn">
                               <i className="fa-regular fa-minus" />
                             </span>
-                            <input type="text" defaultValue={1} />
-                            <span className="plus-btn">
+                            <input type="text" value={count} />
+                            <span onClick={()=>setCount(count + 1)} className="plus-btn">
                               <i className="fa-regular fa-plus" />
                             </span>
                           </div>

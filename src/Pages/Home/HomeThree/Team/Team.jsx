@@ -7,7 +7,7 @@ const Team = () => {
         <div className="section-title style-two mw-800" data-cues="slideInUp">
           <h2>Meet Our Experienced Team Members</h2>
         </div>
-        <TeamCom />
+        <TeamCom len={4} />
       </div>
     </div>
   );

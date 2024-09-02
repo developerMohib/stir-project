@@ -2,10 +2,12 @@ import shapeBg from "../../assets/images/banner-bg-shape.png";
 import BreadCump from "../../components/BreadCump/BreadCump";
 import productImg from "../../assets/images/product-details-img.jpg";
 import useDataFetch from "../../components/Hooks/useDataFetch";
+import { useState } from "react";
 
 const ProductDetails = () => {
   const { data } = useDataFetch({ url: "/product.json" });
-  const { data: review } = useDataFetch({ url: "/review.json" });
+  const { data: review } = useDataFetch({ url: "/review.json" });  
+  const [count, setCount] = useState(1);
   return (
     <div>
       <BreadCump bgImg={shapeBg} pageName={"Product Details"} />
@@ -81,11 +83,11 @@ const ProductDetails = () => {
                 <span className="sub-title">Quantity</span>
                 <div className="d-flex justify-content-xl-between align-items-center flex-wrap gap-2 quantity-wrap">
                   <div className="input-counter d-flex justify-content-between">
-                    <span className="minus-btn">
+                    <span onClick={() => count > 0 && setCount(count - 1)} className="minus-btn">
                       <i className="fa-regular fa-minus" />
                     </span>
-                    <input type="text" defaultValue={1} />
-                    <span className="plus-btn">
+                    <input type="text" value={count} />
+                    <span onClick={()=>setCount(count + 1)} className="plus-btn">
                       <i className="fa-regular fa-plus" />
                     </span>
                   </div>

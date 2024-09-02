@@ -1,7 +1,10 @@
 import shapeBg from "../../assets/images/banner-bg-shape.png";
 import BreadCump from "../../components/BreadCump/BreadCump";
 import cart4 from "../../assets/images/cart-4.jpg";
+import { useState } from "react";
 const Checkout = () => {
+  
+  const [count, setCount] = useState(1);
   return (
     <>
       <BreadCump bgImg={shapeBg} pageName={"checkout"} />
@@ -166,7 +169,7 @@ const Checkout = () => {
                           placeholder="Order Note (optional)"
                           cols={30}
                           rows={6}
-                          defaultValue={""}
+                          value={count}
                         />
                       </div>
                     </div>
@@ -186,11 +189,11 @@ const Checkout = () => {
                         <h3 className="mb-2">Wireless Router</h3>
                         <span className="color">Color: White</span>
                         <div className="input-counter d-flex justify-content-between bg-white">
-                          <span className="minus-btn">
+                          <span onClick={() => count > 0 && setCount(count - 1)} className="minus-btn">
                             <i className="fa-regular fa-minus" />
                           </span>
-                          <input type="text" defaultValue={1} />
-                          <span className="plus-btn">
+                          <input type="text" value={count} />
+                          <span onClick={()=>setCount(count + 1)} className="plus-btn">
                             <i className="fa-regular fa-plus" />
                           </span>
                         </div>
