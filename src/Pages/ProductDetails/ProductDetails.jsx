@@ -221,7 +221,7 @@ const ProductDetails = () => {
               <p>
                 Fashion isn’t just about clothing; it’s a reflection of the
                 zeitgeist, encapsulating societal attitudes, values, and
-                aspirations. It's a platform for innovation, where designers
+                aspirations. Its a platform for innovation, where designers
                 experiment with textures, colors, fabrics, &amp; silhouettes,
                 pushing the buttings of creativity and challenging conventional
                 norms.

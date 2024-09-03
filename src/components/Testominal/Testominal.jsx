@@ -4,13 +4,19 @@ import OwlCarousel from "react-owl-carousel";
 
 const Testominal = () => {
   const options = {
-    loop: true,
-    margin: 10,
-    nav: true,
-    items: 1, // Number of items to show
-    autoplay: true,
-    autoplayTimeout: 2500, // Time in ms
-    autoplayHoverPause: true,
+    items: 1,
+		loop: true,
+		margin: 30,
+		nav: true,
+		dots: false,
+		autoplay: true,
+		smartSpeed: 1000,
+		autoplayHoverPause: true,
+		animateOut: 'fadeOut',
+		navText: [
+			"<i class='fa-regular fa-arrow-left'></i>",
+			"<i class='fa-regular fa-arrow-right'></i>",
+		],
   };
   return (
     <div className="testimonials-area-three overflow-hidden">

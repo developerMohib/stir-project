@@ -1,6 +1,5 @@
-import four0four from "../../../assets/images/404.png"
+import four0four from "../../assets/images/404.png";
 import { Link } from "react-router-dom";
-
 
 const Error404 = () => {
   return (
@@ -17,7 +16,8 @@ const Error404 = () => {
                 quaerat accusantium eum dignissimos ex voluptates dicta
                 assumenda
               </p>
-              <Link  className="main-btn" to='/'>Back To Home
+              <Link className="main-btn" to="/">
+                Back To Home
               </Link>
             </div>
           </div>

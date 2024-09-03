@@ -36,7 +36,7 @@ const UpdateBlog = () => {
                 <li>3 Minutes Read</li>
               </ul>
               <h3>
-                <Link to="/single-blog">A Day in Fashion's Hidden Realms</Link>
+                <Link to="/single-blog">A Day in Fashions Hidden Realms</Link>
               </h3>
             </div>
           </div>
@@ -53,7 +53,7 @@ const UpdateBlog = () => {
               </ul>
               <h3>
                 <Link to="/single-blog">
-                  A Wedding Photographer's Awesome Blog
+                  A Wedding Photographers Awesome Blog
                 </Link>
               </h3>
             </div>

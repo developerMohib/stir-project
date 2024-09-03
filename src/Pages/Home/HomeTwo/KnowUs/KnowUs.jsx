@@ -37,13 +37,13 @@ const KnowUs = () => {
               <h2>Most Distinguished Agency in Your City</h2>
               <p>
                 Our approach is rooted in collaboration and customization. We
-                don't believe in one-size-fits-all solutions. Instead, we take
-                the time to comprehensively analyze each client's unique needs,
+                dont believe in one-size-fits-all solutions. Instead, we take
+                the time to comprehensively analyze each clients unique needs,
                 objectives, and industry landscape. By doing so, we ensure that
                 our recommendations...
               </p>
               <p>
-                Whether it's enhancing market visibility, improving operational
+                Whether its enhancing market visibility, improving operational
                 efficiency, or implementing cutting-edge technologies, our
                 agency offers a wide spectrum of services from strategic
                 consulting

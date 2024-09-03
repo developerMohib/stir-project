@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import bannerShape from "../../../assets/images/banner-bg-shape.png"
+import bannerShape from "../../assets/images/banner-bg-shape.png"
 const ErrorBanner = () => {
   return (
     <div>

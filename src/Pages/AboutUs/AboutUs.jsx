@@ -1,9 +1,9 @@
 import BreadCump from "../../components/BreadCump/BreadCump";
 import shapeTwo from "../../assets/images/banner-bg-shape2.png";
-import Aboutus from "./Aboutus/Aboutus";
 import Contact from "../../components/Contact/Contact";
 import Testominal from "../../components/Testominal/Testominal";
 import useDataFetch from "../../components/Hooks/useDataFetch";
+import Aboutus from "../../components/Aboutus/Aboutus"
 
 const AboutUs = () => {
   const { data } = useDataFetch({ url: "/servicesOne.json" });
