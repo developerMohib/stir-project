@@ -3,7 +3,7 @@ import shapeTwo from "../../assets/images/banner-bg-shape2.png";
 import Contact from "../../components/Contact/Contact";
 import Testominal from "../../components/Testominal/Testominal";
 import useDataFetch from "../../components/Hooks/useDataFetch";
-import Aboutus from "../../components/Aboutus/Aboutus"
+import Aboutus from "../../components/Aboutus/Aboutus";
 
 const AboutUs = () => {
   const { data } = useDataFetch({ url: "/servicesOne.json" });
@@ -15,11 +15,11 @@ const AboutUs = () => {
       <BreadCump bgImg={shapeTwo} pageName={"About Us"} />
       <Aboutus />
       <div className="services-area pt-100 pb-75">
-        <div className="container">      
-        <div className={`section-title`} data-cues="slideInUp">
+        <div className="container">
+          <div className={`section-title`} data-cues="slideInUp">
             <span className="top-title">Our Services</span>
             <h2>Professional &amp; Creative Agency Solutions</h2>
-          </div>    
+          </div>
           <div className="row justify-content-center" data-cues="slideInUp">
             {limitedData?.map((service, idx) => (
               <div key={idx} className="col-xl-3 col-sm-6">
@@ -43,7 +43,6 @@ const AboutUs = () => {
               </div>
             ))}
           </div>
-
 
           <Testominal />
           <Contact bgColor={" "} />

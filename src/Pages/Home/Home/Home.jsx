@@ -3,10 +3,10 @@ import Contact from "../../../components/Contact/Contact";
 import Faq from "../../../components/Faq/Faq";
 import HeroBanner from "../../../components/HeroBanner/HeroBanner";
 import Services from "../../../components/Services/Services";
-import Testominal from "./Testominal/Testominal";
 import WhoWe from "../../../components/WhoWe/WhoWe";
 import WorkBrand from "../../../components/WorkBrand/WorkBrand";
 import useDataFetch from "../../../components/Hooks/useDataFetch";
+import TestominalHome from "../../../components/TestominalHome/TestominalHome";
 
 const Home = () => {
   const { data } = useDataFetch({ url: "/servicesOne.json"});
@@ -19,7 +19,7 @@ const Home = () => {
       <WorkBrand />
       <Services data={limitedData} />
       <WhoWe />      
-      <Testominal />
+      <TestominalHome />
       <CaseStudy />
       <Faq />
       <Contact />

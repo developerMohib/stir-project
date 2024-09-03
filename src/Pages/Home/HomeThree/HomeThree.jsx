@@ -1,21 +1,21 @@
+import AboutUsStyleThree from "../../../components/AboutUsStyleThree/AboutUsStyleThree";
 import Testominal from "../../../components/Testominal/Testominal";
-import Aboutus from "./Aboutus/Aboutus";
-import Banner from "./Banner/Banner";
-import BlogMarque from "./BlogMarque/BlogMarque";
-import EmpowerVdo from "./EmpowerVdo/EmpowerVdo";
-import News from "./News/News";
-import Services from "./Services/Services";
-import Team from "./Team/Team";
+import Banner from "../../../components/Banner/Banner";
+import BlogMarque from "../../../components/BlogMarque/BlogMarque";
+import EmpowerVdo from "../../../components/EmpowerVdo/EmpowerVdo";
+import News from "../../../components/News/News";
+import TeamCompThree from "../../../components/TeamCompThree/TeamCompThree";
+import ServicesThree from "../../../components/ServicesThree/ServicesThree";
 
 const HomeThree = () => {
   return (
     <div>
       <Banner />
-      <Services />
-      <Aboutus />
+      <ServicesThree />
+      <AboutUsStyleThree />
       <BlogMarque />
       <EmpowerVdo />
-      <Team />
+      <TeamCompThree />
       <Testominal />
       <News />
     </div>
