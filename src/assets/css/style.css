@@ -739,7 +739,7 @@ textarea.form-control {
   z-index: 999;
   position: sticky;
   animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-  background-color: #0e0e0e !important;
+  background-color: #ffffff !important;
 }
 .navbar-area .navbar-brand {
   margin-right: 200px;
@@ -786,43 +786,43 @@ textarea.form-control {
 .navbar-area.style-two .navbar-brand {
   margin-right: 150px;
 }
-.navbar-area.style-three .main-nav .navbar .navbar-nav .nav-item .nav-link {
+.style-three .main-nav .navbar .navbar-nav .nav-item .nav-link {
   color: #121212;
   font-weight: 400;
   font-size: 16px;
 }
-.navbar-area.style-three .main-nav .navbar .navbar-nav .nav-item .nav-link.active {
+.style-three .main-nav .navbar .navbar-nav .nav-item .nav-link.active {
   color: #FD6219;
 }
-.navbar-area.style-three .main-nav .navbar .navbar-nav .nav-item .dropdown-menu .nav-item .nav-link {
+.style-three .main-nav .navbar .navbar-nav .nav-item .dropdown-menu .nav-item .nav-link {
   font-weight: 400;
   font-size: 16px;
 }
-.navbar-area.style-three .main-nav .navbar .navbar-nav .nav-item .dropdown-menu .nav-item .dropdown-menu .nav-item .nav-link {
+.style-three .main-nav .navbar .navbar-nav .nav-item .dropdown-menu .nav-item .dropdown-menu .nav-item .nav-link {
   font-weight: 400;
   font-size: 16px;
 }
-.navbar-area.style-three .main-nav .nav-right-options .social-link li a {
+.style-three .main-nav .nav-right-options .social-link li a {
   background-color: #F5F5F5;
   color: #030303;
 }
-.navbar-area.style-three .main-nav .nav-right-options .social-link li a:hover {
+.style-three .main-nav .nav-right-options .social-link li a:hover {
   background-color: #4A5FE1;
   color: #ffffff;
 }
-.navbar-area.style-three .main-nav .nav-right-options .src-btn {
+.style-three .main-nav .nav-right-options .src-btn {
   background-color: transparent;
   font-size: 20px;
   margin-left: 30px;
 }
-.navbar-area.style-three .main-nav .nav-right-options .menu-btn {
+.style-three .main-nav .nav-right-options .menu-btn {
   background-color: transparent;
   font-size: 20px;
   margin-left: 25px;
   padding-left: 25px;
   border-left: 1px solid rgba(217, 217, 217, 0.4);
 }
-.navbar-area.style-three.is-sticky {
+.style-three.is-sticky {
   background-color: #ffffff !important;
   box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
 }

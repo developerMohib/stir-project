@@ -58,15 +58,8 @@ const TestominalHome = () => {
                 />
               </div>
               <div className="flex-grow-1 ms-md-4 mt-3 mt-md-0">
-                <p>
-                  Established with a vision to redefine the art of storytelling
-                  &amp; design, we have been at the forefront of delivering
-                  groundbreaking creative solutions since our inception. Our
-                  agency is a dynamic powerhouse of talent.
-                </p>
-                <h4>
-                  Mark Phillips / <span>Product Designer</span>
-                </h4>
+              <p>With Established a vision to redefine the art of storytelling & design, we have been at the forefront of groundbreaking delivering creative solutions since our inception. Our agency is a dynamic powerhouse talent of.</p>
+							<h4>Alex Phillips / <span>Product Sale</span></h4>
               </div>
               <img src={quat} className="quat" alt="quat" />
             </div>

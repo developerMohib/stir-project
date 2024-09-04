@@ -23,7 +23,7 @@ const NavbarOne = () => {
     };
   }, []);
   return (
-    <div className={`navbar-area bg-black ${isSticky ? "is-sticky" : ""}`}>
+    <div className="bg-black">
       {/*=== Start Main Navbar Section ===*/}
       <div className="main-nav">
         <div className="container mw-1680">
@@ -406,6 +406,19 @@ const NavbarOne = () => {
         </div>
       </div>
       {/*=== End Main Navbar Section ===*/}
+      {/*=== Start Mobile Navbar Section ===*/}
+      <div className="mobile-nav">
+        <div className="container">
+          <div className="mobile-menu">
+            <div className="logo">
+              <a href="">
+                <img src={white_logo} alt="logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/*=== End Mobile Navbar Section ===*/}
     </div>
   );
 };

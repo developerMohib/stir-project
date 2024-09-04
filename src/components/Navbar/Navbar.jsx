@@ -55,7 +55,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`navbar-area ${pathname === "/" ? "bg-black" : ""} ${isSticky ? "is-sticky" : ""}`}>
+    <div className={`navbar-area ${isSticky ? "is-sticky" : ""}`}>
       {renderNavbar()}
     </div>
   );

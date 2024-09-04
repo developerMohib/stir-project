@@ -23,7 +23,7 @@ const NavbarThree = () => {
   }, []);
 
   return (
-    <div className={`navbar-area style-three ${isSticky ? "is-sticky" : ""}`}>
+    <div className={`style-three`}>
       <div>
         {/*=== Start Main Navbar Section ===*/}
         <div className="main-nav">

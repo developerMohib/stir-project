@@ -24,9 +24,7 @@ const NavbarTwo = () => {
 
   return (
     <div
-      className={`navbar-area style-two bg-color-0c0c1c ${
-        isSticky ? "is-sticky" : ""
-      } py-0`}
+      className="style-two bg-color-0c0c1c py-0"
     >
       {/*=== Start Main Navbar Section ===*/}
       <div className="main-nav">
